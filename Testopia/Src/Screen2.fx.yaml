@@ -518,7 +518,7 @@ Screen2 As screen:
             DropdownCanvas7 As Dropdown.pcfdataset:
                 DisplayMode: =DisplayMode.Edit
                 Height: =32
-                Visible: =Gal3
+                Visible: =Cont5
                 Width: =320
                 X: =15
                 Y: =62
