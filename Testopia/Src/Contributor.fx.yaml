@@ -464,10 +464,10 @@
                 BorderStyle: =BorderStyle.Dashed
                 BorderThickness: =2
                 Fill: =RGBA(255, 255, 255, 1)
-                Height: =266
+                Height: =318
                 Width: =2
-                X: =490
-                Y: =90
+                X: =488
+                Y: =52
                 ZIndex: =6
 
             Slider2 As Slider:
@@ -508,10 +508,10 @@
                 BorderStyle: =BorderStyle.Dashed
                 BorderThickness: =2
                 Fill: =RGBA(255, 255, 255, 1)
-                Height: =266
+                Height: =318
                 Width: =2
                 X: =1076
-                Y: =92
+                Y: =52
                 ZIndex: =10
 
             Label5_2 As label:
