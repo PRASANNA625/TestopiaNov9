@@ -1,7 +1,9 @@
 "'Draft/Edit' As screen":
-    Fill: =RGBA(255, 255, 255, 1)
+    Fill: =RGBA(247, 247, 247, 1)
+    OnVisible: =
 
     Container10 As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(255, 255, 255, 1)
         Height: =123
         Width: =970
         X: =483
@@ -43,47 +45,63 @@
             ZIndex: =5
 
     Gallery1 As gallery.galleryHorizontal:
+        BorderStyle: =BorderStyle.None
         BorderThickness: =1
         DelayItemLoading: =true
-        Height: =686
+        Height: =604
         Items: ='Exm.Questions'
         LoadingSpinner: =LoadingSpinner.Data
+        ShowNavigation: =true
         ShowScrollbar: =false
-        TemplatePadding: =30
-        TemplateSize: =446
+        TemplatePadding: =20
+        TemplateSize: =445
         Visible: =vartab=1
         Width: =1786
-        WrapCount: =4
-        X: =75
+        WrapCount: =2
+        X: =65
         Y: =243
         ZIndex: =5
 
+        Container7 As groupContainer.manualLayoutContainer:
+            BorderStyle: =BorderStyle.None
+            DropShadow: =DropShadow.Semibold
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =270
+            RadiusBottomLeft: =30
+            RadiusBottomRight: =30
+            RadiusTopLeft: =30
+            RadiusTopRight: =30
+            Width: =396
+            ZIndex: =1
+
         Label15 As label:
             Font: =Font.Arial
-            Height: =80
-            OnSelect: =Select(Parent)
+            Height: =74
+            OnSelect: =
             Text: =ThisItem.questions
-            Width: =446
-            ZIndex: =1
+            Width: =345
+            X: =40
+            Y: =40
+            ZIndex: =2
 
         Label16 As label:
             Align: =Align.Center
             Color: =RGBA(56, 96, 178, 1)
-            OnSelect: =Select(Parent)
+            FontWeight: =FontWeight.Bold
+            OnSelect: =
             Text: ="Edit"
-            Underline: =true
-            X: =135
-            Y: =85
-            ZIndex: =2
+            X: =108
+            Y: =220
+            ZIndex: =3
 
         Icon2 As icon.Edit:
             Height: =14
             Icon: =Icon.Edit
-            OnSelect: =Select(Parent)
+            OnSelect: =
             Width: =20
-            X: =246
-            Y: =98
-            ZIndex: =3
+            X: =211
+            Y: =233
+            ZIndex: =4
 
     Button5 As button:
         OnSelect: =Collect(button,"Test")
@@ -108,12 +126,12 @@
             Font: =Font.Arial
             Height: =46
             OnSelect: =Set(vartab,1)
-            RadiusBottomLeft: =0
-            RadiusBottomRight: =0
-            RadiusTopLeft: =0
-            RadiusTopRight: =0
+            RadiusBottomLeft: =5
+            RadiusBottomRight: =5
+            RadiusTopLeft: =5
+            RadiusTopRight: =5
             Size: =12
-            Text: ="Draft / Edit " & "("&CountRows(button) &")"
+            Text: ="Draft / Edit " & "(" & varquestion & ")"
             Width: =190
             ZIndex: =1
 
@@ -123,10 +141,10 @@
             Font: =Font.Arial
             Height: =46
             OnSelect: =Set(vartab,2)
-            RadiusBottomLeft: =0
-            RadiusBottomRight: =0
-            RadiusTopLeft: =0
-            RadiusTopRight: =0
+            RadiusBottomLeft: =5
+            RadiusBottomRight: =5
+            RadiusTopLeft: =5
+            RadiusTopRight: =5
             Size: =12
             Text: ="Under Review"
             Width: =175
@@ -139,10 +157,10 @@
             Font: =Font.Arial
             Height: =46
             OnSelect: =Set(vartab,3)
-            RadiusBottomLeft: =0
-            RadiusBottomRight: =0
-            RadiusTopLeft: =0
-            RadiusTopRight: =0
+            RadiusBottomLeft: =5
+            RadiusBottomRight: =5
+            RadiusTopLeft: =5
+            RadiusTopRight: =5
             Size: =12
             Text: ="Approved/Rejected"
             Width: =191

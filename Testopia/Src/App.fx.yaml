@@ -1,6 +1,6 @@
 App As appinfo:
     BackEnabled: =false
-    OnStart: |+
+    OnStart: |
         =Set(_guideStep,0);
         //ClearCollect(MatchingQuestionsCollection,'Exm.Question_details')//
         /*ClearCollect(
@@ -34,7 +34,7 @@ App As appinfo:
                 ) // Include other columns you need
             )
         )*/
-        
+        Set(varquestion,CountRows('Exm.Questions'))
     StartScreen: ='Start Screen'
     Theme: =PowerAppsTheme
 
