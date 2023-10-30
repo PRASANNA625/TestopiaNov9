@@ -1,2 +1,14 @@
 "'Draft/Edit' As screen":
+    Fill: =RGBA(255, 255, 255, 1)
+
+    "TabList1 As 'Tab list'.pcfdataset":
+        Alignment: ='TabList.Alignment'.Horizontal
+        BasePaletteColor: =RGBA(39, 113, 194, 1)
+        DisplayMode: =DisplayMode.Edit
+        Height: =62
+        Items: =["Draft / Edit","Under Review","Approved/Rejected"]
+        Width: =455
+        X: =733
+        Y: =42
+        ZIndex: =1
 
