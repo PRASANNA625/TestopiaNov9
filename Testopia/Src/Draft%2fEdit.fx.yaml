@@ -1,5 +1,6 @@
 "'Draft/Edit' As screen":
     Fill: =RGBA(255, 255, 255, 1)
+    OnVisible: =
 
     Container10 As groupContainer.manualLayoutContainer:
         Height: =123
@@ -48,7 +49,6 @@
         Height: =686
         Items: ='Exm.Questions'
         LoadingSpinner: =LoadingSpinner.Data
-        ShowScrollbar: =false
         TemplatePadding: =30
         TemplateSize: =446
         Visible: =vartab=1
@@ -113,7 +113,7 @@
             RadiusTopLeft: =0
             RadiusTopRight: =0
             Size: =12
-            Text: ="Draft / Edit " & "("&CountRows(button) &")"
+            Text: ="Draft / Edit " & "(" & varquestion & ")"
             Width: =190
             ZIndex: =1
 
