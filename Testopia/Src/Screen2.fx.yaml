@@ -101,6 +101,8 @@ Screen2 As screen:
         Label11_1 As label:
             Align: =Align.Center
             BorderThickness: =1
+            Color: =If(SelectedLabel = Label11_1, Color.White, Color.Black)
+            Fill: =If(SelectedLabel = Label11_1, Color.Blue, Color.LightGray)
             FontWeight: =FontWeight.Semibold
             Height: =60
             Size: =21
@@ -112,6 +114,8 @@ Screen2 As screen:
         Label11_2 As label:
             Align: =Align.Center
             BorderThickness: =1
+            Color: =If(SelectedLabel = Label11_2, Color.White, Color.Black)
+            Fill: =If(SelectedLabel = Label11_2, Color.Blue, Color.LightGray)
             FontWeight: =FontWeight.Semibold
             Height: =60
             Size: =21
