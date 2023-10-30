@@ -133,6 +133,8 @@ Screen2 As screen:
             OnSelect: |-
                 =Set(PreviousLabel, SelectedLabel);
                 Set(SelectedLabel, Label11_2);
+                Set(Cont4,false);
+                Set(Cont5,true);
             Size: =21
             Text: ="Approved/Rejected"
             Width: =300
@@ -415,8 +417,18 @@ Screen2 As screen:
 
         Container5 As groupContainer.manualLayoutContainer:
             Height: =934
+            Visible: |-
+                =
+                Cont5
             Width: =1904
             X: =6
-            Y: =146
             ZIndex: =9
+
+            DropdownCanvas4 As Dropdown.pcfdataset:
+                DisplayMode: =DisplayMode.Edit
+                Height: =115
+                Width: =583
+                X: =640
+                Y: =100
+                ZIndex: =1
 
