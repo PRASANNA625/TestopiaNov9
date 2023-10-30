@@ -41,21 +41,6 @@
     "OverridableProperties": {},
     "Version": "2.1.0"
   },
-  "Checkbox": {
-    "CustomGroupControlTemplateName": "",
-    "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/powercontrol/PowerApps_CoreControls_CheckboxCanvas",
-    "IsComponentTemplate": false,
-    "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": true,
-    "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": false,
-    "LastModifiedTimestamp": "0",
-    "Name": "PowerApps_CoreControls_CheckboxCanvas",
-    "OverridableProperties": {},
-    "TemplateDisplayName": "Checkbox",
-    "Version": "0.0.15"
-  },
   "circle": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
@@ -70,21 +55,6 @@
     "OverridableProperties": {},
     "Version": "2.3.0"
   },
-  "Combobox": {
-    "CustomGroupControlTemplateName": "",
-    "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/powercontrol/PowerApps_CoreControls_ComboboxCanvas",
-    "IsComponentTemplate": false,
-    "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": true,
-    "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": false,
-    "LastModifiedTimestamp": "0",
-    "Name": "PowerApps_CoreControls_ComboboxCanvas",
-    "OverridableProperties": {},
-    "TemplateDisplayName": "Combobox",
-    "Version": "0.0.18"
-  },
   "dataCard": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
@@ -98,21 +68,6 @@
     "Name": "dataCard",
     "OverridableProperties": {},
     "Version": "1.0.2"
-  },
-  "Date picker": {
-    "CustomGroupControlTemplateName": "",
-    "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/powercontrol/PowerApps_CoreControls_DatePickerCanvas",
-    "IsComponentTemplate": false,
-    "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": true,
-    "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": false,
-    "LastModifiedTimestamp": "0",
-    "Name": "PowerApps_CoreControls_DatePickerCanvas",
-    "OverridableProperties": {},
-    "TemplateDisplayName": "Date picker",
-    "Version": "0.0.9"
   },
   "dropdown": {
     "CustomGroupControlTemplateName": "",
