@@ -111,7 +111,7 @@
             RadiusBottomRight: =0
             RadiusTopLeft: =0
             RadiusTopRight: =0
-            Size: =13
+            Size: =12
             Text: ="Draft / Edit " & "("&CountRows(button) &")"
             Width: =190
             ZIndex: =1
@@ -126,7 +126,7 @@
             RadiusBottomRight: =0
             RadiusTopLeft: =0
             RadiusTopRight: =0
-            Size: =13
+            Size: =12
             Text: ="Under Review"
             Width: =175
             X: =190
@@ -142,7 +142,7 @@
             RadiusBottomRight: =0
             RadiusTopLeft: =0
             RadiusTopRight: =0
-            Size: =13
+            Size: =12
             Text: ="Approved/Rejected"
             Width: =191
             X: =365
@@ -244,6 +244,7 @@
     Button9 As button:
         Font: =Font.Arial
         Height: =42
+        OnSelect: =Navigate(Contributor,ScreenTransition.Fade)
         Size: =13
         Text: ="Create more question"
         Width: =286
