@@ -14,7 +14,17 @@
             BorderThickness: =0
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =CheckboxGal.Height
+            Height: |-
+                =//CheckboxGal.Height
+                Switch(
+                    OptionDD.SelectedText.Value,
+                    "☑️ Checkbox",
+                    CheckboxGal.Height,
+                    "🔘 Multiple choice",
+                    MultiplechoiceGal.Height,
+                    "— Paragraph",
+                    TextInput2.Text
+                )
             Width: =Parent.Width
             X: =0
             Y: =0
@@ -136,6 +146,7 @@
                 Items: =ColOption
                 Layout: =Layout.Vertical
                 LoadingSpinner: =LoadingSpinner.Data
+                ShowScrollbar: =false
                 TemplatePadding: =10
                 TemplateSize: =69
                 Visible: =If(OptionDD.SelectedText.Value = "🔘 Multiple choice" ,true,false)
@@ -201,6 +212,7 @@
                 Items: =ColOption
                 Layout: =Layout.Vertical
                 LoadingSpinner: =LoadingSpinner.Data
+                ShowScrollbar: =false
                 TemplatePadding: =10
                 TemplateSize: =69
                 Visible: =If(OptionDD.SelectedText.Value = "☑️ Checkbox" ,true,false)
@@ -259,6 +271,18 @@
                     X: =556
                     Y: =20
                     ZIndex: =3
+
+            TextInput2 As text:
+                Default: =""
+                Font: =Font.Arial
+                Height: =208
+                HintText: ="Enter your options"
+                Mode: =TextMode.MultiLine
+                Visible: =If(OptionDD.SelectedText.Value = "— Paragraph" ,true,false)
+                Width: =1032
+                X: =40
+                Y: =446
+                ZIndex: =12
 
         DataCard2 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
