@@ -592,19 +592,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Contributor.Canvas1.DataCard2.Container7_1.IntermediateRadio.AccessibleLabel"
+                  "fullyQualifiedName": "Contributor.Canvas1.DataCard2.Advancecon.AdvanceRadio.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Contributor.Canvas1.DataCard2.Container7_1.IntermediateRadio.AccessibleLabel",
+                  "fullyQualifiedName": "Contributor.Canvas1.DataCard2.Advancecon.AdvanceRadio.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Contributor",
-                "type": "Contributor.Canvas1.DataCard2.Container7_1.IntermediateRadio"
+                "type": "Contributor.Canvas1.DataCard2.Advancecon.AdvanceRadio"
               }
             }
           ],
@@ -622,19 +622,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Contributor.Canvas1.DataCard2.Container7_2.AdvanceRadio.AccessibleLabel"
+                  "fullyQualifiedName": "Contributor.Canvas1.DataCard2.Intermediatecon.IntermediateRadio.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Contributor.Canvas1.DataCard2.Container7_2.AdvanceRadio.AccessibleLabel",
+                  "fullyQualifiedName": "Contributor.Canvas1.DataCard2.Intermediatecon.IntermediateRadio.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Contributor",
-                "type": "Contributor.Canvas1.DataCard2.Container7_2.AdvanceRadio"
+                "type": "Contributor.Canvas1.DataCard2.Intermediatecon.IntermediateRadio"
               }
             }
           ],
