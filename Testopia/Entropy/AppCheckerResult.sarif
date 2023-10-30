@@ -2978,49 +2978,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Contributor.MultiplechoiceGal.AccessibleLabel"
+                  "fullyQualifiedName": "Contributor.Canvas1.DataCard1.CheckboxGal.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Contributor.MultiplechoiceGal.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Contributor",
-                "type": "Contributor.MultiplechoiceGal"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Contributor.MultiplechoiceGal.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Contributor.MultiplechoiceGal.TabIndex",
+                  "fullyQualifiedName": "Contributor.Canvas1.DataCard1.CheckboxGal.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Contributor",
-                "type": "Contributor.MultiplechoiceGal"
+                "type": "Contributor.Canvas1.DataCard1.CheckboxGal"
               }
             }
           ],
@@ -3038,19 +3008,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Contributor.MultiplechoiceGal.TextInput1.AccessibleLabel"
+                  "fullyQualifiedName": "Contributor.Canvas1.DataCard1.CheckboxGal.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Contributor.MultiplechoiceGal.TextInput1.AccessibleLabel",
+                  "fullyQualifiedName": "Contributor.Canvas1.DataCard1.CheckboxGal.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Contributor",
-                "type": "Contributor.MultiplechoiceGal.TextInput1"
+                "type": "Contributor.Canvas1.DataCard1.CheckboxGal"
               }
             }
           ],
@@ -3068,49 +3038,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Contributor.MultiplechoiceGal.Icon1.AccessibleLabel"
+                  "fullyQualifiedName": "Contributor.Canvas1.DataCard1.CheckboxGal.Icon1_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Contributor.MultiplechoiceGal.Icon1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Contributor",
-                "type": "Contributor.MultiplechoiceGal.Icon1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Contributor.MultiplechoiceGal.Icon1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Contributor.MultiplechoiceGal.Icon1.TabIndex",
+                  "fullyQualifiedName": "Contributor.Canvas1.DataCard1.CheckboxGal.Icon1_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Contributor",
-                "type": "Contributor.MultiplechoiceGal.Icon1"
+                "type": "Contributor.Canvas1.DataCard1.CheckboxGal.Icon1_1"
               }
             }
           ],
@@ -3128,19 +3068,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Contributor.CheckboxGal.AccessibleLabel"
+                  "fullyQualifiedName": "Contributor.Canvas1.DataCard1.CheckboxGal.Icon1_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Contributor.CheckboxGal.AccessibleLabel",
+                  "fullyQualifiedName": "Contributor.Canvas1.DataCard1.CheckboxGal.Icon1_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Contributor",
-                "type": "Contributor.CheckboxGal"
+                "type": "Contributor.Canvas1.DataCard1.CheckboxGal.Icon1_1"
               }
             }
           ],
@@ -3158,19 +3098,49 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Contributor.CheckboxGal.TabIndex"
+                  "fullyQualifiedName": "Contributor.Canvas1.DataCard1.CheckboxGal.TextInput1_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Contributor.CheckboxGal.TabIndex",
+                  "fullyQualifiedName": "Contributor.Canvas1.DataCard1.CheckboxGal.TextInput1_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Contributor",
+                "type": "Contributor.Canvas1.DataCard1.CheckboxGal.TextInput1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Contributor.Canvas1.DataCard1.MultiplechoiceGal.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Contributor.Canvas1.DataCard1.MultiplechoiceGal.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Contributor",
-                "type": "Contributor.CheckboxGal"
+                "type": "Contributor.Canvas1.DataCard1.MultiplechoiceGal"
               }
             }
           ],
@@ -3188,19 +3158,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Contributor.CheckboxGal.TextInput1_1.AccessibleLabel"
+                  "fullyQualifiedName": "Contributor.Canvas1.DataCard1.MultiplechoiceGal.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Contributor.CheckboxGal.TextInput1_1.AccessibleLabel",
+                  "fullyQualifiedName": "Contributor.Canvas1.DataCard1.MultiplechoiceGal.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Contributor",
-                "type": "Contributor.CheckboxGal.TextInput1_1"
+                "type": "Contributor.Canvas1.DataCard1.MultiplechoiceGal"
               }
             }
           ],
@@ -3218,49 +3188,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Contributor.CheckboxGal.Icon1_1.AccessibleLabel"
+                  "fullyQualifiedName": "Contributor.Canvas1.DataCard1.MultiplechoiceGal.Icon1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Contributor.CheckboxGal.Icon1_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Contributor",
-                "type": "Contributor.CheckboxGal.Icon1_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Contributor.CheckboxGal.Icon1_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Contributor.CheckboxGal.Icon1_1.TabIndex",
+                  "fullyQualifiedName": "Contributor.Canvas1.DataCard1.MultiplechoiceGal.Icon1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Contributor",
-                "type": "Contributor.CheckboxGal.Icon1_1"
+                "type": "Contributor.Canvas1.DataCard1.MultiplechoiceGal.Icon1"
               }
             }
           ],
@@ -3272,6 +3212,66 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Contributor.Canvas1.DataCard1.MultiplechoiceGal.Icon1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Contributor.Canvas1.DataCard1.MultiplechoiceGal.Icon1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Contributor",
+                "type": "Contributor.Canvas1.DataCard1.MultiplechoiceGal.Icon1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Contributor.Canvas1.DataCard1.MultiplechoiceGal.TextInput1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Contributor.Canvas1.DataCard1.MultiplechoiceGal.TextInput1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Contributor",
+                "type": "Contributor.Canvas1.DataCard1.MultiplechoiceGal.TextInput1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -3621,6 +3621,36 @@
                 "member": "AccessibleLabel",
                 "module": "Question Selection",
                 "type": "'Question Selection'.TechnologyConfirmationPopUpMenuContainerQuestionSelectionScreen.Container1.TechnologyListBoxQuestionSelection"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Contributor.Canvas1.DataCard2.ButtonCanvas1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Contributor.Canvas1.DataCard2.ButtonCanvas1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Contributor",
+                "type": "Contributor.Canvas1.DataCard2.ButtonCanvas1"
               }
             }
           ],
