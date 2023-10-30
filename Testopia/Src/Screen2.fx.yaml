@@ -74,9 +74,14 @@ Screen2 As screen:
         Label11 As label:
             Align: =Align.Center
             BorderThickness: =1
+            Color: =If(SelectedLabel = Label11, Color.White, Color.Black)
+            Fill: |
+                =//If(SelectedLabel = Label11, Blue, Gray),//
+                If(SelectedLabel = Label11, Color.Blue, Color.LightGray)
+                //Color: If(SelectedLabel = Label1, White, Black)//
             FontWeight: =FontWeight.Semibold
             Height: =60
-            OnSelect: |
+            OnSelect: |+
                 =
                 /*Set(Label1Color, DarkBlue);
                 Set(Label1FontColor, White);
@@ -84,6 +89,10 @@ Screen2 As screen:
                 Set(Label2FontColor, Black);
                 Set(Label3Color, RGBA(214, 221, 224, 1));
                 Set(Label3FontColor, Black);*/
+                
+                Set(PreviousLabel, SelectedLabel);
+                Set(SelectedLabel, Label11);
+                
             Size: =21
             Text: ="All Questions (8)"
             Width: =260
@@ -265,7 +274,7 @@ Screen2 As screen:
             Button6 As button:
                 DisplayMode: =DisplayMode.Disabled
                 Fill: =RGBA(217, 217, 217, 1)
-                Font: =Font.'Arial'
+                Font: =Font.Arial
                 Height: =219
                 OnSelect: =Select(Parent)
                 Text: =ThisItem.questions
