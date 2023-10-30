@@ -604,7 +604,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Container5",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -742,7 +742,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "DropdownCanvas1",
-      "ParentIndex": 3,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -825,7 +825,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "DropdownCanvas1_1",
-      "ParentIndex": 4,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -872,7 +872,7 @@
       "StyleName": "",
       "Type": "ControlInfo"
     },
-    "DropdownCanvas5": {
+    "DropdownCanvas6": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "X",
@@ -888,6 +888,14 @@
           "InvariantPropertyName": "Items",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "true",
+          "InvariantPropertyName": "Visible",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
         }
       ],
       "HasDynamicProperties": false,
@@ -899,7 +907,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "DropdownCanvas5",
+      "Name": "DropdownCanvas6",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -936,6 +944,11 @@
         {
           "Category": "Design",
           "PropertyName": "ZIndex",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Visible",
           "RuleProviderType": "Unknown"
         }
       ],
@@ -1018,7 +1031,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Gallery2",
-      "ParentIndex": 6,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1245,7 +1258,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Gallery5",
-      "ParentIndex": 5,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2674,7 +2687,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label12_2",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2957,7 +2970,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label12_3",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
