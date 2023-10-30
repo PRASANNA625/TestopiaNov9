@@ -1,0 +1,291 @@
+Screen2 As screen:
+    Fill: =RGBA(242, 246, 247, 1)
+    OnVisible: |+
+        =//ClearCollect(MatchingQuestionsCollection,'Exm.Question_details')//
+        
+        /*ClearCollect(
+            MatchingQuestionsCollection,
+            Filter(
+                'Exm.Question_details',
+                technology_id = LookUp('Exm.Technology', technology = DropdownCanvas1.Selected.Value).technology_id
+                    && Level_of_quetions_id = LookUp('Exm.Level_of_quetions', level = DropdownCanvas1_1.Selected.Value).Level_of_quetions_id
+            )
+        );*/
+        /*ClearCollect(
+            DelegatedFilter,
+            Filter(
+                'Exm.Question_details',
+                technology_id = LookUp('Exm.Technology', technology = DropdownCanvas1.Selected.Value).technology_id,
+                Level_of_quetions_id = LookUp('Exm.Level_of_quetions', level = DropdownCanvas1_1.Selected.Value).Level_of_quetions_id
+            )
+        )*/
+        /*ClearCollect(
+            MatchingQuestionsCollection,
+            LookUp(
+                'Exm.Question_details',
+                technology_id = LookUp('Exm.Technology', technology = DropdownCanvas1.Selected.Value).technology_id
+                    && Level_of_quetions_id = LookUp('Exm.Level_of_quetions', level = DropdownCanvas1_1.Selected.Value).Level_of_quetions_id
+            )
+        );*/
+        
+        /*ClearCollect(
+            MatchingQuestionsCollection,
+            Distinct(
+                Filter(
+                    'Exm.Question_details',
+                    technology_id = LookUp('Exm.Technology', technology = DropdownCanvas1.Selected.Value).technology_id
+                        && Level_of_quetions_id = LookUp('Exm.Level_of_quetions', level = DropdownCanvas1_1.Selected.Value).Level_of_quetions_id
+                ),
+                question_id
+            )
+        )*/
+        ClearCollect(
+            Var1,
+            Filter(
+                'Exm.Question_details',
+                technology_id = LookUp('Exm.Technology', technology = DropdownCanvas1.Selected.Value).technology_id
+                && Level_of_quetions_id = LookUp('Exm.Level_of_quetions', level = DropdownCanvas1_1.Selected.Value).Level_of_quetions_id
+            )
+        );
+        ClearCollect(
+            Var3,
+             ShowColumns(
+               Filter(
+                    'Exm.Question_details',
+                    technology_id = LookUp('Exm.Technology', technology = DropdownCanvas1.Selected.Value).technology_id
+                    && Level_of_quetions_id = LookUp('Exm.Level_of_quetions', level = DropdownCanvas1_1.Selected.Value).Level_of_quetions_id
+                ),
+                "question_id",  // Include all the columns you need
+                "Level_of_quetions_id", // Include other columns you need
+                "technology_id" // Include other columns you need
+            )
+        );
+        
+        
+
+    Container3 As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(214, 221, 224, 1)
+        Height: =90
+        Width: =1143
+        X: =306
+        Y: =56
+        ZIndex: =1
+
+        Label11 As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Semibold
+            Height: =86
+            OnSelect: |
+                =
+                /*Set(Label1Color, DarkBlue);
+                Set(Label1FontColor, White);
+                Set(Label2Color, RGBA(214, 221, 224, 1));
+                Set(Label2FontColor, Black);
+                Set(Label3Color, RGBA(214, 221, 224, 1));
+                Set(Label3FontColor, Black);*/
+            Size: =21
+            Text: ="All Questions (8)"
+            Width: =339
+            ZIndex: =1
+
+        Label11_1 As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Semibold
+            Height: =86
+            Size: =21
+            Text: ="Review"
+            Width: =398
+            X: =339
+            ZIndex: =2
+
+        Label11_2 As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Semibold
+            Height: =86
+            Size: =21
+            Text: ="Approved/Rejected"
+            Width: =405
+            X: =737
+            ZIndex: =3
+
+    Container4 As groupContainer.manualLayoutContainer:
+        Height: =934
+        Width: =1904
+        X: =6
+        Y: =146
+        ZIndex: =2
+
+        Label12_2 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =29
+            Size: =15
+            Text: ="Technology"
+            X: =306
+            Y: =69
+            ZIndex: =2
+
+        Label12_3 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =29
+            Size: =15
+            Text: ="Level"
+            X: =1336
+            Y: =69
+            ZIndex: =3
+
+        DropdownCanvas1 As Dropdown.pcfdataset:
+            DefaultSelectedItems: =["Select the technology"]
+            DisplayMode: =DisplayMode.Edit
+            Height: =55
+            Items: |+
+                =Distinct('Exm.Technology', technology)
+                //["Select the  level","SQL","PowerBI","PowerApp","Python","Java"]//
+                /*AddColumns(
+                    Distinct('Exm.Technology', technology),
+                    "DefaultSelect",
+                    "Select the technology"
+                )*/
+                
+                
+                
+            Width: =330
+            X: =306
+            Y: =126
+            ZIndex: =4
+
+        "Gallery5 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+            DelayItemLoading: =true
+            Height: =674
+            Items: |
+                =//'Exm.Questions'//
+                
+                
+                
+                /*Filter(
+                    'Exm.Questions',
+                    LookUp(
+                        'Exm.Question_details',
+                        technology_id = LookUp('Exm.Technology', technology = DropdownCanvas1.Selected.Value).technology_id
+                            && Level_of_quetions_id = LookUp('Exm.Level_of_quetions', level = DropdownCanvas1_1.Selected.Value).Level_of_quetions_id
+                    ).question_id=questions_id
+                )*/
+                /*Filter(
+                    'Exm.Questions',
+                    If(
+                        DropdownCanvas1.Selected.Value = "Select the technology" && DropdownCanvas1_1.Selected.Value = "Select the level",
+                        true, // If both dropdowns are set to their default values, return all records
+                        LookUp(
+                            'Exm.Question_details',
+                            technology_id = LookUp('Exm.Technology', technology = DropdownCanvas1.Selected.Value).technology_id
+                            && Level_of_quetions_id = LookUp('Exm.Level_of_quetions', level = DropdownCanvas1_1.Selected.Value).Level_of_quetions_id
+                        ).question_id in 'Exm.Questions'.questions_id
+                    )
+                )*/
+                
+                /*Filter(
+                            'Exm.Question_details',
+                            technology_id = LookUp('Exm.Technology', technology = DropdownCanvas1.Selected.Value).technology_id
+                                && Level_of_quetions_id = LookUp('Exm.Level_of_quetions', level = DropdownCanvas1_1.Selected.Value).Level_of_quetions_id
+                        ).
+                        question_id*/
+                      
+                        
+                                      /*  Filter(
+                    'Exm.Question_details',
+                    technology_id = LookUp('Exm.Technology', technology = DropdownCanvas1.Selected.Value).technology_id
+                    && Level_of_quetions_id = LookUp('Exm.Level_of_quetions', level = DropdownCanvas1_1.Selected.Value).Level_of_quetions_id
+                )*/
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                /*Filter(
+                    'Exm.Questions',
+                    CountRows(Filter(MatchingQuestionsCollection, QuestionID = questions_id)) > 0
+                )*/
+                /*Filter(
+                    'Exm.Questions',
+                    ForAll(
+                        'Exm.Question_details',
+                        If(
+                            technology_id = LookUp('Exm.Technology', technology = DropdownCanvas1.Selected.Value).technology_id
+                                && Level_of_quetions_id = LookUp('Exm.Level_of_quetions', level = DropdownCanvas1_1.Selected.Value).Level_of_quetions_id,
+                            true,
+                            false
+                        )
+                    )
+                )*/
+                Filter('Exm.Questions',questions_id in(ShowColumns(Var2,"question_id")))
+            Layout: =Layout.Vertical
+            LoadingSpinner: =LoadingSpinner.Data
+            TemplatePadding: =0
+            TemplateSize: =253
+            Width: =1892
+            WrapCount: =4
+            X: =12
+            Y: =225
+            ZIndex: =6
+
+            NextArrow5 As icon.ChevronRight:
+                AccessibleLabel: =Self.Tooltip
+                Color: =RGBA(166, 166, 166, 1)
+                Height: =50
+                Icon: =Icon.ChevronRight
+                OnSelect: =Select(Parent)
+                PaddingBottom: =16
+                PaddingLeft: =16
+                PaddingRight: =16
+                PaddingTop: =16
+                Tooltip: ="View item details"
+                Width: =50
+                X: =Parent.TemplateWidth - Self.Width - 12
+                Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                ZIndex: =4
+
+            Separator5 As rectangle:
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =8
+                OnSelect: =Select(Parent)
+                Width: =Parent.TemplateWidth
+                Y: =Parent.TemplateHeight - Self.Height
+                ZIndex: =5
+
+            Button6 As button:
+                DisplayMode: =DisplayMode.Disabled
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =219
+                OnSelect: =Select(Parent)
+                Text: =ThisItem.questions
+                Width: =461
+                Y: =13
+                ZIndex: =6
+
+        DropdownCanvas1_1 As Dropdown.pcfdataset:
+            DefaultSelectedItems: =["Select the level"]
+            DisplayMode: =DisplayMode.Edit
+            Height: =55
+            Items: |+
+                =Distinct('Exm.Level_of_quetions', level)
+                //["Select the  level","SQL","PowerBI","PowerApp","Python","Java"]//
+                /*AddColumns(
+                    Distinct('Exm.Technology', technology),
+                    "DefaultSelect",
+                    "Select the technology"
+                )*/
+                
+                
+                
+            Width: =330
+            X: =1348
+            Y: =126
+            ZIndex: =7
+
