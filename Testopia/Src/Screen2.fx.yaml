@@ -422,7 +422,7 @@ Screen2 As screen:
             Height: =934
             Visible: |-
                 =
-                Cont5
+                Gal3
             Width: =1904
             X: =6
             ZIndex: =9
@@ -437,7 +437,7 @@ Screen2 As screen:
                 TemplateSize: =104
                 Visible: =Gal3
                 Width: =1904
-                Y: =6
+                X: =6
                 ZIndex: =1
 
                 Image10 As image:
@@ -513,12 +513,12 @@ Screen2 As screen:
                     Width: =4
                     ZIndex: =6
 
-            DropdownCanvas4 As Dropdown.pcfdataset:
+            DropdownCanvas6 As Dropdown.pcfdataset:
                 DisplayMode: =DisplayMode.Edit
-                Height: =115
-                Visible: =Gal3
-                Width: =576
-                X: =40
-                Y: =40
+                Height: =148
+                Items: =Distinct('Exm.Technology', technology)
+                Width: =376
+                X: =584
+                Y: =90
                 ZIndex: =2
 
