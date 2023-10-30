@@ -43,9 +43,10 @@
             ZIndex: =5
 
     Gallery1 As gallery.galleryHorizontal:
+        BorderThickness: =1
         DelayItemLoading: =true
         Height: =686
-        Items: =button
+        Items: ='Exm.Questions'
         LoadingSpinner: =LoadingSpinner.Data
         ShowScrollbar: =false
         TemplatePadding: =30
@@ -59,10 +60,10 @@
 
         Label15 As label:
             Font: =Font.Arial
+            Height: =80
             OnSelect: =Select(Parent)
-            Text: =ThisItem.Value
-            X: =40
-            Y: =40
+            Text: =ThisItem.questions
+            Width: =446
             ZIndex: =1
 
         Label16 As label:
