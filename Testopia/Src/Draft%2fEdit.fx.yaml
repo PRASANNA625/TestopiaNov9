@@ -7,8 +7,18 @@
         DisplayMode: =DisplayMode.Edit
         Height: =62
         Items: =["Draft / Edit","Under Review","Approved/Rejected"]
+        OnSelect: =
+        Size: ='TabList.Size'.Large
         Width: =455
         X: =733
         Y: =42
         ZIndex: =1
+
+        Value2 As pcfDataField.textualColumn:
+            FieldDisplayName: ="Value"
+            FieldName: ="Value"
+            FieldType: ="s"
+            FieldVariantName: ="textualColumn"
+            Order: =1
+            ZIndex: =1
 
