@@ -1863,19 +1863,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen2.Container4.DropdownCanvas7.AccessibleLabel"
+                  "fullyQualifiedName": "Screen2.Container4.Container5.DropdownCanvas8.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen2.Container4.DropdownCanvas7.AccessibleLabel",
+                  "fullyQualifiedName": "Screen2.Container4.Container5.DropdownCanvas8.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Screen2",
-                "type": "Screen2.Container4.DropdownCanvas7"
+                "type": "Screen2.Container4.Container5.DropdownCanvas8"
               }
             }
           ],

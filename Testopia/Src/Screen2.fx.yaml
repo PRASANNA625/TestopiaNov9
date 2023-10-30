@@ -133,8 +133,8 @@ Screen2 As screen:
             OnSelect: |-
                 =Set(PreviousLabel, SelectedLabel);
                 Set(SelectedLabel, Label11_2);
-                Set(Cont4,false);
                 Set(Cont5,true);
+                Set(Cont4,false);
             Size: =21
             Text: ="Approved/Rejected"
             Width: =300
@@ -424,13 +424,13 @@ Screen2 As screen:
             X: =6
             ZIndex: =9
 
-        DropdownCanvas7 As Dropdown.pcfdataset:
-            DisplayMode: =DisplayMode.Edit
-            Height: =79
-            Items: =Distinct('Exm.Technology', technology)
-            Visible: =Cont4
-            Width: =430
-            X: =670
-            Y: =69
-            ZIndex: =10
+            DropdownCanvas8 As Dropdown.pcfdataset:
+                DisplayMode: =DisplayMode.Edit
+                Height: =141
+                Items: =
+                Visible: =Cont5
+                Width: =353
+                X: =686
+                Y: =134
+                ZIndex: =1
 
