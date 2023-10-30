@@ -301,7 +301,11 @@
             ZIndex: =2
 
             Container5 As groupContainer.manualLayoutContainer:
+                BorderColor: =RGBA(39, 113, 194, 1)
+                BorderStyle: =BorderStyle.Dashed
+                BorderThickness: =2
                 Height: =3
                 Width: =1920
+                Y: =12
                 ZIndex: =1
 
