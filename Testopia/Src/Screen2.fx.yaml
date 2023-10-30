@@ -65,16 +65,17 @@ Screen2 As screen:
 
     Container3 As groupContainer.manualLayoutContainer:
         Fill: =RGBA(214, 221, 224, 1)
-        Height: =90
-        Width: =1143
-        X: =306
+        Height: =66
+        Width: =820
+        X: =510
         Y: =56
         ZIndex: =1
 
         Label11 As label:
             Align: =Align.Center
+            BorderThickness: =1
             FontWeight: =FontWeight.Semibold
-            Height: =86
+            Height: =60
             OnSelect: |
                 =
                 /*Set(Label1Color, DarkBlue);
@@ -85,27 +86,29 @@ Screen2 As screen:
                 Set(Label3FontColor, Black);*/
             Size: =21
             Text: ="All Questions (8)"
-            Width: =339
+            Width: =260
             ZIndex: =1
 
         Label11_1 As label:
             Align: =Align.Center
+            BorderThickness: =1
             FontWeight: =FontWeight.Semibold
-            Height: =86
+            Height: =60
             Size: =21
             Text: ="Review"
-            Width: =398
-            X: =339
+            Width: =260
+            X: =260
             ZIndex: =2
 
         Label11_2 As label:
             Align: =Align.Center
+            BorderThickness: =1
             FontWeight: =FontWeight.Semibold
-            Height: =86
+            Height: =60
             Size: =21
             Text: ="Approved/Rejected"
-            Width: =405
-            X: =737
+            Width: =300
+            X: =520
             ZIndex: =3
 
     Container4 As groupContainer.manualLayoutContainer:
@@ -261,7 +264,8 @@ Screen2 As screen:
 
             Button6 As button:
                 DisplayMode: =DisplayMode.Disabled
-                Fill: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(217, 217, 217, 1)
+                Font: =Font.'Arial'
                 Height: =219
                 OnSelect: =Select(Parent)
                 Text: =ThisItem.questions
