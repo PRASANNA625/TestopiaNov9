@@ -133,6 +133,8 @@ Screen2 As screen:
             OnSelect: |
                 =Set(PreviousLabel, SelectedLabel);
                 Set(SelectedLabel, Label11_2);
+                Set(Gal2,false);
+                Set(Gal5,false);
                 Set(Cont4,false);
                 Set(Cont5,true);
             Size: =21
@@ -433,4 +435,13 @@ Screen2 As screen:
                 X: =686
                 Y: =134
                 ZIndex: =1
+
+            Label13 As label:
+                Height: =49
+                Text: ="Select Your Technology"
+                Visible: =Cont5
+                Width: =719
+                X: =554
+                Y: =44
+                ZIndex: =2
 
