@@ -57,6 +57,67 @@
     "dependents": [],
     "id": "331b00b7-6894-4a5a-a35e-02c3e278a76b"
   },
+  "45e0b27a-48aa-4c4b-9014-81940adc6bc0": {
+    "connectionRef": {
+      "authenticationType": "sqlAuthentication",
+      "displayName": "SQL Server",
+      "gatewayObjectIdHint": "e06f4079-f199-4958-b61b-9e3af63a2f50",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1654/1.0.1654.3414/sql/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sql",
+      "isOnPremiseConnection": true,
+      "sharedConnectionId": "/providers/microsoft.powerapps/apis/shared_sql/connections/1313702a4e52498984f6a6ef2fe4a4cf"
+    },
+    "datasets": {
+      "DESKTOP-6R5VQVU,ArusInternal": {
+        "dataSources": {
+          "Exm.Candidate": {
+            "tableName": "[Exm].[Candidate]"
+          },
+          "Exm.Exam": {
+            "tableName": "[Exm].[Exam]"
+          },
+          "Exm.Exam_question": {
+            "tableName": "[Exm].[Exam_question]"
+          },
+          "Exm.Level_of_quetions": {
+            "tableName": "[Exm].[Level_of_quetions]"
+          },
+          "Exm.Options": {
+            "tableName": "[Exm].[Options]"
+          },
+          "Exm.Question_details": {
+            "tableName": "[Exm].[Question_details]"
+          },
+          "Exm.Questions": {
+            "tableName": "[Exm].[Questions]"
+          },
+          "Exm.Technology": {
+            "tableName": "[Exm].[Technology]"
+          },
+          "Stg.Staging_table": {
+            "tableName": "[Stg].[Staging_table]"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Exm.Candidate",
+      "Exm.Exam",
+      "Exm.Exam_question",
+      "Exm.Level_of_quetions",
+      "Exm.Options",
+      "Exm.Questions",
+      "Exm.Question_details",
+      "Exm.Technology",
+      "Stg.Staging_table"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "endpoints": [
+      "DESKTOP-6R5VQVU,ArusInternal"
+    ],
+    "id": "45e0b27a-48aa-4c4b-9014-81940adc6bc0"
+  },
   "5c9f1832-0977-4111-908c-c3bbee3718c9": {
     "appActions": [
       "SendEmail"
@@ -140,74 +201,5 @@
       "DESKTOP-6R5VQVU,ArusInternal"
     ],
     "id": "6a29f473-d6ef-49bf-9de0-0142480040f9"
-  },
-  "9bc2f5b9-39e8-4088-b61a-c47e3677ec94": {
-    "appActions": [
-      "providers/PowerPlatform.Governance/Operations/Read",
-      "providers/PowerPlatform.Governance/Operations/Write",
-      "providers/PowerPlatform.Governance/Operations/Delete"
-    ],
-    "connectionRef": {
-      "apiTier": "Premium",
-      "authenticationType": "sqlAuthentication",
-      "displayName": "SQL Server",
-      "gatewayObjectIdHint": "e06f4079-f199-4958-b61b-9e3af63a2f50",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1654/1.0.1654.3414/sql/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_sql",
-      "isOnPremiseConnection": true,
-      "parameterHints": {},
-      "parameterHintsV2": {},
-      "sharedConnectionId": "/providers/microsoft.powerapps/apis/shared_sql/connections/9f8c0a2473cc4172be7258a6f931bef9"
-    },
-    "datasets": {
-      "DESKTOP-6R5VQVU,ArusInternal": {
-        "dataSources": {
-          "Exm.Candidate": {
-            "tableName": "[Exm].[Candidate]"
-          },
-          "Exm.Exam": {
-            "tableName": "[Exm].[Exam]"
-          },
-          "Exm.Exam_question": {
-            "tableName": "[Exm].[Exam_question]"
-          },
-          "Exm.Level_of_quetions": {
-            "tableName": "[Exm].[Level_of_quetions]"
-          },
-          "Exm.Options": {
-            "tableName": "[Exm].[Options]"
-          },
-          "Exm.Question_details": {
-            "tableName": "[Exm].[Question_details]"
-          },
-          "Exm.Questions": {
-            "tableName": "[Exm].[Questions]"
-          },
-          "Exm.Technology": {
-            "tableName": "[Exm].[Technology]"
-          },
-          "Stg.Staging_table": {
-            "tableName": "[Stg].[Staging_table]"
-          }
-        }
-      }
-    },
-    "dataSources": [
-      "Exm.Candidate",
-      "Exm.Exam",
-      "Exm.Exam_question",
-      "Exm.Level_of_quetions",
-      "Exm.Options",
-      "Exm.Question_details",
-      "Exm.Questions",
-      "Exm.Technology",
-      "Stg.Staging_table"
-    ],
-    "dependencies": {},
-    "dependents": [],
-    "endpoints": [
-      "DESKTOP-6R5VQVU,ArusInternal"
-    ],
-    "id": "9bc2f5b9-39e8-4088-b61a-c47e3677ec94"
   }
 }
