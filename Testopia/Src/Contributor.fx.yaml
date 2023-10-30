@@ -299,7 +299,7 @@
             BorderThickness: =4
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =388
+            Height: =416
             Width: =1918
             X: =0
             Y: =1
@@ -314,4 +314,107 @@
                 X: =40
                 Y: =40
                 ZIndex: =1
+
+            Beginnercon As groupContainer.manualLayoutContainer:
+                Fill: |-
+                    =If(
+                        BeginnerRadio.Selected.Value = "Beginner",
+                        RGBA(
+                            39,
+                            113,
+                            194,
+                            1
+                        ),
+                        Color.White
+                    )
+                Height: =66
+                Width: =276
+                X: =40
+                Y: =80
+                ZIndex: =2
+
+                BeginnerRadio As radio:
+                    Color: =RGBA(51, 51, 51, 1)
+                    Font: =Font.Arial
+                    Height: =63
+                    Items: =["Beginner"]
+                    OnChange: =Set(varRdoButton, BeginnerRadio.Selected.Value);
+                    OnSelect: |-
+                        =Switch(
+                            varRdoButton,
+                            BeginnerRadio.Selected.Value,
+                            Set(
+                                varRdoButton,
+                                Blank()
+                            ),
+                            Blank(),
+                            Set(
+                                varRdoButton,
+                                BeginnerRadio.Selected.Value
+                            );
+                            
+                        )
+                    Reset: =If(varRdoButton = Blank(),true,false)
+                    Width: =270
+                    X: =6
+                    Y: =3
+                    ZIndex: =1
+
+            Container7_1 As groupContainer.manualLayoutContainer:
+                X: =696
+                Y: =80
+                ZIndex: =3
+
+                IntermediateRadio As radio:
+                    Items: =["Intermediate"]
+                    OnChange: =Set(varIntermediateRadio, IntermediateRadio.Selected.Value);
+                    OnSelect: |-
+                        =Switch(
+                            varIntermediateRadio,
+                            IntermediateRadio.Selected.Value,
+                            Set(
+                                varIntermediateRadio,
+                                Blank()
+                            ),
+                            Blank(),
+                            Set(
+                                varIntermediateRadio,
+                                IntermediateRadio.Selected.Value
+                            );
+                            
+                        )
+                    Reset: =If(varIntermediateRadio = Blank(),true,false)
+                    Width: =330
+                    X: =40
+                    Y: =40
+                    ZIndex: =1
+
+            Container7_2 As groupContainer.manualLayoutContainer:
+                X: =1380
+                Y: =80
+                ZIndex: =4
+
+                AdvanceRadio As radio:
+                    Items: =["Advance"]
+                    OnChange: =Set(varAdvanceRadio, AdvanceRadio.Selected.Value);
+                    OnSelect: |-
+                        =Switch(
+                            varAdvanceRadio,
+                            AdvanceRadio.Selected.Value,
+                            Set(
+                                varAdvanceRadio,
+                                Blank()
+                            ),
+                            Blank(),
+                            Set(
+                                varAdvanceRadio,
+                                AdvanceRadio.Selected.Value
+                            );
+                            
+                        )
+                    Reset: =If(varAdvanceRadio = Blank(),true,false)
+                    Width: =330
+                    X: =40
+                    Y: =40
+                    ZIndex: =1
 
