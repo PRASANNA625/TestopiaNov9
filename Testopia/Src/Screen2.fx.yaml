@@ -79,6 +79,7 @@ Screen2 As screen:
                 =//If(SelectedLabel = Label11, Blue, Gray),//
                 If(SelectedLabel = Label11, Color.Blue, Color.LightGray)
                 //Color: If(SelectedLabel = Label1, White, Black)//
+            Font: =Font.Arial
             FontWeight: =FontWeight.Semibold
             Height: =60
             OnSelect: |+
@@ -109,6 +110,7 @@ Screen2 As screen:
             BorderThickness: =1
             Color: =If(SelectedLabel = Label11_1, Color.White, Color.Black)
             Fill: =If(SelectedLabel = Label11_1, Color.Blue, Color.LightGray)
+            Font: =Font.Arial
             FontWeight: =FontWeight.Semibold
             Height: =60
             OnSelect: |-
@@ -130,6 +132,7 @@ Screen2 As screen:
             BorderThickness: =1
             Color: =If(SelectedLabel = Label11_2, Color.White, Color.Black)
             Fill: =If(SelectedLabel = Label11_2, Color.Blue, Color.LightGray)
+            Font: =Font.Arial
             FontWeight: =FontWeight.Semibold
             Height: =60
             OnSelect: |+
@@ -156,18 +159,19 @@ Screen2 As screen:
         ZIndex: =2
 
         Label12_2 As label:
+            Font: =Font.Arial
             FontWeight: =FontWeight.Bold
             Height: =29
-            Size: =15
             Text: ="Technology"
+            Width: =249
             X: =306
             Y: =69
             ZIndex: =2
 
         Label12_3 As label:
+            Font: =Font.Arial
             FontWeight: =FontWeight.Bold
             Height: =29
-            Size: =15
             Text: ="Level"
             X: =1336
             Y: =69
