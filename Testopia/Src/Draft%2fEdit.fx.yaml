@@ -51,8 +51,10 @@
         Height: =604
         Items: ='Exm.Questions'
         LoadingSpinner: =LoadingSpinner.Data
+        ShowNavigation: =true
+        ShowScrollbar: =false
         TemplatePadding: =20
-        TemplateSize: =447
+        TemplateSize: =445
         Visible: =vartab=1
         Width: =1786
         WrapCount: =2
@@ -69,7 +71,7 @@
             RadiusBottomRight: =30
             RadiusTopLeft: =30
             RadiusTopRight: =30
-            Width: =449
+            Width: =396
             ZIndex: =1
 
         Label15 As label:
