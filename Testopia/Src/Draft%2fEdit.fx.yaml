@@ -5,13 +5,13 @@
         Alignment: ='TabList.Alignment'.Horizontal
         BasePaletteColor: =RGBA(39, 113, 194, 1)
         DisplayMode: =DisplayMode.Edit
-        Height: =62
+        Height: =79
         Items: =["Draft / Edit","Under Review","Approved/Rejected"]
         OnSelect: =
         Size: ='TabList.Size'.Large
-        Width: =455
-        X: =733
-        Y: =42
+        Width: =417
+        X: =752
+        Y: =75
         ZIndex: =1
 
         Value2 As pcfDataField.textualColumn:
@@ -21,4 +21,96 @@
             FieldVariantName: ="textualColumn"
             Order: =1
             ZIndex: =1
+
+    Header1 As Header:
+        DisplayMode: =DisplayMode.Edit
+        Height: =75
+        Style: ='Header.Style'.Light
+        Title: =App.ActiveScreen.Name
+        UserEmail: =User().Email
+        UserImage: =User().Image
+        UserName: =User().FullName
+        Width: =Parent.Width
+        X: =0
+        Y: =0
+        ZIndex: =2
+
+    Container10 As groupContainer.manualLayoutContainer:
+        Height: =148
+        Width: =970
+        X: =475
+        Y: =130
+        ZIndex: =4
+
+        Label14 As label:
+            Color: =RGBA(51, 51, 51, 1)
+            Font: =Font.Arial
+            Text: ="Technology"
+            X: =45
+            Y: =26
+            ZIndex: =2
+
+        DropdownCanvas3 As Dropdown.pcfdataset:
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Items: =["SQL","Power Apps","Power BI","Java","Data Bricks","Azure"]
+            Width: =320
+            X: =45
+            Y: =95
+            ZIndex: =3
+
+        Label14_1 As label:
+            Color: =RGBA(51, 51, 51, 1)
+            Font: =Font.Arial
+            Text: ="Level"
+            X: =533
+            Y: =26
+            ZIndex: =4
+
+        DropdownCanvas3_1 As Dropdown.pcfdataset:
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Items: =["Bronze","Silver","Gold"]
+            Width: =320
+            X: =533
+            Y: =95
+            ZIndex: =5
+
+    Gallery1 As gallery.galleryHorizontal:
+        DelayItemLoading: =true
+        Height: =794
+        Items: =button
+        LoadingSpinner: =LoadingSpinner.Data
+        ShowScrollbar: =false
+        TemplatePadding: =30
+        TemplateSize: =478
+        Width: =1786
+        WrapCount: =4
+        X: =75
+        Y: =278
+        ZIndex: =5
+
+        Label15 As label:
+            Font: =Font.Arial
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Value
+            X: =40
+            Y: =40
+            ZIndex: =1
+
+        Button4 As button:
+            Color: =RGBA(39, 113, 194, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            OnSelect: =Select(Parent)
+            Text: ="Edit" & " ✏️"
+            X: =147
+            Y: =111
+            ZIndex: =2
+
+    Button3 As button:
+        OnSelect: =Collect(button,"Test")
+        Text: ="Button"
+        X: =41
+        Y: =114
+        ZIndex: =6
 
