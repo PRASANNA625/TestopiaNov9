@@ -113,3 +113,9 @@
         Y: =719
         ZIndex: =10
 
+    Label12 As label:
+        Text: ="Text"
+        X: =136
+        Y: =276
+        ZIndex: =11
+
