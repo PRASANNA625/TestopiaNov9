@@ -132,14 +132,14 @@ Screen2 As screen:
             Fill: =If(SelectedLabel = Label11_2, Color.Blue, Color.LightGray)
             FontWeight: =FontWeight.Semibold
             Height: =60
-            OnSelect: |
+            OnSelect: |+
                 =Set(PreviousLabel, SelectedLabel);
                 Set(SelectedLabel, Label11_2);
                 Set(Gal2,false);
                 Set(Gal5,false);
                 Set(Cont4,false);
                 Set(Cont5,true);
-                Set(Gal3,true);
+                
             Size: =21
             Text: ="Approved/Rejected"
             Width: =300
@@ -436,7 +436,7 @@ Screen2 As screen:
                 LoadingSpinner: =LoadingSpinner.Data
                 TemplatePadding: =0
                 TemplateSize: =104
-                Visible: =Gal3
+                Visible: =Cont5
                 Width: =1904
                 X: =6
                 Y: =36
@@ -517,10 +517,10 @@ Screen2 As screen:
 
             DropdownCanvas7 As Dropdown.pcfdataset:
                 DisplayMode: =DisplayMode.Edit
-                Height: =32
-                Visible: =Cont5
-                Width: =320
-                X: =15
-                Y: =62
+                Height: =95
+                Visible: =true
+                Width: =313
+                X: =606
+                Y: =148
                 ZIndex: =2
 
