@@ -861,6 +861,14 @@
           "InvariantPropertyName": "Style",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Logo",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
         }
       ],
       "HasDynamicProperties": false,
@@ -899,6 +907,11 @@
         {
           "Category": "Data",
           "PropertyName": "Style",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "Logo",
           "RuleProviderType": "Unknown"
         },
         {

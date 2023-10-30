@@ -25,6 +25,7 @@
     Header1 As Header:
         DisplayMode: =DisplayMode.Edit
         Height: =75
+        Logo: ='Group 1'
         Style: ='Header.Style'.Light
         Title: =//App.ActiveScreen.Name
         UserEmail: =User().Email
