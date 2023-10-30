@@ -8,7 +8,7 @@
         Y: =
         ZIndex: =1
 
-        DataCard1 As dataCard:
+        AddQuestionDataCard As dataCard:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
             BorderThickness: =0
@@ -293,7 +293,7 @@
                 Y: =446
                 ZIndex: =12
 
-        DataCard2 As dataCard.blankCard:
+        LevelSelectionDataCard As dataCard.blankCard:
             BorderColor: =RGBA(222, 232, 255, 1)
             BorderStyle: =BorderStyle.Dashed
             BorderThickness: =4
@@ -541,4 +541,15 @@
                 X: =1183
                 Y: =145
                 ZIndex: =12
+
+        TechnologySelectDataCard As dataCard.blankCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =100
+            Width: =1920
+            X: =0
+            Y: =2
+            ZIndex: =3
 
