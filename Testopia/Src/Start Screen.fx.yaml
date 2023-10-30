@@ -113,3 +113,11 @@
         Y: =719
         ZIndex: =10
 
+    Image2 As image:
+        Height: =73
+        Image: ='Group 1'
+        Width: =68
+        X: =926
+        Y: =50
+        ZIndex: =11
+
