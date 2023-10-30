@@ -114,6 +114,7 @@ Screen2 As screen:
                 =Set(PreviousLabel, SelectedLabel);
                 Set(SelectedLabel, Label11_1);
                 Set(Gal5,false);
+                Set(Gal3,false);
                 Set(Gal2,true);
                 Set(Cont4,true);
                 Set(Cont5,false);
@@ -425,6 +426,7 @@ Screen2 As screen:
                 Gal3
             Width: =1904
             X: =6
+            Y: =146
             ZIndex: =9
 
             "Gallery3 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
@@ -438,6 +440,7 @@ Screen2 As screen:
                 Visible: =Gal3
                 Width: =1904
                 X: =6
+                Y: =146
                 ZIndex: =1
 
                 Image10 As image:
