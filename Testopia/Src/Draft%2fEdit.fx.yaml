@@ -90,8 +90,8 @@
             FontWeight: =FontWeight.Bold
             OnSelect: =
             Text: ="Edit"
-            X: =99
-            Y: =152
+            X: =108
+            Y: =220
             ZIndex: =3
 
         Icon2 As icon.Edit:
@@ -99,8 +99,8 @@
             Icon: =Icon.Edit
             OnSelect: =
             Width: =20
-            X: =202
-            Y: =165
+            X: =211
+            Y: =233
             ZIndex: =4
 
     Button5 As button:
@@ -126,10 +126,10 @@
             Font: =Font.Arial
             Height: =46
             OnSelect: =Set(vartab,1)
-            RadiusBottomLeft: =0
-            RadiusBottomRight: =0
-            RadiusTopLeft: =0
-            RadiusTopRight: =0
+            RadiusBottomLeft: =5
+            RadiusBottomRight: =5
+            RadiusTopLeft: =5
+            RadiusTopRight: =5
             Size: =12
             Text: ="Draft / Edit " & "(" & varquestion & ")"
             Width: =190
@@ -141,10 +141,10 @@
             Font: =Font.Arial
             Height: =46
             OnSelect: =Set(vartab,2)
-            RadiusBottomLeft: =0
-            RadiusBottomRight: =0
-            RadiusTopLeft: =0
-            RadiusTopRight: =0
+            RadiusBottomLeft: =5
+            RadiusBottomRight: =5
+            RadiusTopLeft: =5
+            RadiusTopRight: =5
             Size: =12
             Text: ="Under Review"
             Width: =175
@@ -157,10 +157,10 @@
             Font: =Font.Arial
             Height: =46
             OnSelect: =Set(vartab,3)
-            RadiusBottomLeft: =0
-            RadiusBottomRight: =0
-            RadiusTopLeft: =0
-            RadiusTopRight: =0
+            RadiusBottomLeft: =5
+            RadiusBottomRight: =5
+            RadiusTopLeft: =5
+            RadiusTopRight: =5
             Size: =12
             Text: ="Approved/Rejected"
             Width: =191
