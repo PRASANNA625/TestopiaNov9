@@ -1923,19 +1923,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen2.Container4.Container5.DropdownCanvas6.AccessibleLabel"
+                  "fullyQualifiedName": "Screen2.Container4.Container5.DropdownCanvas7.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen2.Container4.Container5.DropdownCanvas6.AccessibleLabel",
+                  "fullyQualifiedName": "Screen2.Container4.Container5.DropdownCanvas7.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Screen2",
-                "type": "Screen2.Container4.Container5.DropdownCanvas6"
+                "type": "Screen2.Container4.Container5.DropdownCanvas7"
               }
             }
           ],
@@ -1947,36 +1947,6 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.Cont5"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.Cont5",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Cont5",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 7
         },
         {
           "locations": [

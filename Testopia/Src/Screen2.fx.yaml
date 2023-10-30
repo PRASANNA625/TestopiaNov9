@@ -421,18 +421,16 @@ Screen2 As screen:
                 ZIndex: =6
 
         Container5 As groupContainer.manualLayoutContainer:
-            Height: =934
-            Visible: |-
-                =
-                Gal3
+            Height: =810
+            Visible: =Cont5
             Width: =1904
             X: =6
-            Y: =146
+            Y: =36
             ZIndex: =9
 
             "Gallery3 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
                 DelayItemLoading: =true
-                Height: =934
+                Height: =810
                 Items: =CustomGallerySample
                 Layout: =Layout.Vertical
                 LoadingSpinner: =LoadingSpinner.Data
@@ -441,7 +439,7 @@ Screen2 As screen:
                 Visible: =Gal3
                 Width: =1904
                 X: =6
-                Y: =146
+                Y: =36
                 ZIndex: =1
 
                 Image10 As image:
@@ -517,12 +515,12 @@ Screen2 As screen:
                     Width: =4
                     ZIndex: =6
 
-            DropdownCanvas6 As Dropdown.pcfdataset:
+            DropdownCanvas7 As Dropdown.pcfdataset:
                 DisplayMode: =DisplayMode.Edit
-                Height: =148
-                Items: =Distinct('Exm.Technology', technology)
-                Width: =376
-                X: =584
-                Y: =90
+                Height: =32
+                Visible: =Gal3
+                Width: =320
+                X: =15
+                Y: =62
                 ZIndex: =2
 
