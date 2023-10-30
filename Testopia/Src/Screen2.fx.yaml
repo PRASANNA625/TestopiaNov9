@@ -92,6 +92,7 @@ Screen2 As screen:
                 
                 Set(PreviousLabel, SelectedLabel);
                 Set(SelectedLabel, Label11);
+                Set(Gal2,false);
                 Set(Gal5,true)
                 
                 
@@ -110,7 +111,8 @@ Screen2 As screen:
             OnSelect: |-
                 =Set(PreviousLabel, SelectedLabel);
                 Set(SelectedLabel, Label11_1);
-                Set(Gal6,true)
+                Set(Gal5,false);
+                Set(Gal2,true)
             Size: =21
             Text: ="Review"
             Width: =260
@@ -327,6 +329,7 @@ Screen2 As screen:
             LoadingSpinner: =LoadingSpinner.Data
             TemplatePadding: =0
             TemplateSize: =104
+            Visible: =Gal2
             Width: =1892
             X: =12
             Y: =225
