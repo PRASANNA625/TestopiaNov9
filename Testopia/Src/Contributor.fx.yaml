@@ -547,9 +547,186 @@
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =100
+            Height: =477
             Width: =1920
             X: =0
             Y: =2
             ZIndex: =3
+
+            Beginnercon_1 As groupContainer.manualLayoutContainer:
+                DropShadow: =DropShadow.Regular
+                Fill: =RGBA(222, 232, 255, 1)
+                Height: =66
+                RadiusBottomLeft: =6
+                RadiusBottomRight: =6
+                RadiusTopLeft: =6
+                RadiusTopRight: =6
+                Width: =276
+                X: =39
+                Y: =102
+                ZIndex: =1
+
+                PowerApps As radio:
+                    BorderStyle: =BorderStyle.None
+                    Color: =RGBA(51, 51, 51, 1)
+                    Font: =Font.Arial
+                    FontWeight: =FontWeight.Semibold
+                    Height: =63
+                    Items: =["Power apps"]
+                    OnChange: =Set(varRdoButton, PowerApps.Selected.Value);
+                    OnSelect: |-
+                        =Switch(
+                            varRdoButton,
+                            PowerApps.Selected.Value,
+                            Set(
+                                varRdoButton,
+                                Blank()
+                            ),
+                            Blank(),
+                            Set(
+                                varRdoButton,
+                                PowerApps.Selected.Value
+                            );
+                            
+                        )
+                    RadioBorderColor: =RGBA(56, 96, 178, 1)
+                    RadioSelectionFill: =RGBA(51, 51, 51, 1)
+                    RadioSize: =30
+                    Reset: =If(varRdoButton = Blank(),true,false)
+                    Width: =270
+                    X: =6
+                    Y: =3
+                    ZIndex: =1
+
+            Intermediatecon_1 As groupContainer.manualLayoutContainer:
+                DropShadow: =DropShadow.Regular
+                Fill: =RGBA(222, 232, 255, 1)
+                Height: =66
+                RadiusBottomLeft: =6
+                RadiusBottomRight: =6
+                RadiusTopLeft: =6
+                RadiusTopRight: =6
+                Width: =276
+                X: =39
+                Y: =198
+                ZIndex: =2
+
+                IntermediateRadio_1 As radio:
+                    BorderStyle: =BorderStyle.None
+                    Color: =RGBA(51, 51, 51, 1)
+                    Font: =Font.Arial
+                    FontWeight: =FontWeight.Semibold
+                    Height: =63
+                    Items: =["Intermediate"]
+                    OnChange: =Set(varIntermediate, IntermediateRadio_1.Selected.Value);
+                    OnSelect: |
+                        =Switch(
+                            varIntermediate,
+                            IntermediateRadio_1.Selected.Value,
+                            Set(
+                                varIntermediate,
+                                Blank()
+                            ),
+                            Blank(),
+                            Set(
+                                varIntermediate,
+                                IntermediateRadio_1.Selected.Value
+                            );
+                            
+                        );
+                    RadioBorderColor: =RGBA(56, 96, 178, 1)
+                    RadioSelectionFill: =RGBA(51, 51, 51, 1)
+                    RadioSize: =30
+                    Reset: =If(varIntermediate = Blank(),true,false)
+                    Width: =270
+                    X: =6
+                    Y: =3
+                    ZIndex: =1
+
+            Advancecon_1 As groupContainer.manualLayoutContainer:
+                DropShadow: =DropShadow.Regular
+                Fill: =RGBA(222, 232, 255, 1)
+                Height: =66
+                RadiusBottomLeft: =6
+                RadiusBottomRight: =6
+                RadiusTopLeft: =6
+                RadiusTopRight: =6
+                Width: =276
+                X: =39
+                Y: =300
+                ZIndex: =3
+
+                AdvanceRadio_1 As radio:
+                    BorderStyle: =BorderStyle.None
+                    Color: =RGBA(51, 51, 51, 1)
+                    Font: =Font.Arial
+                    FontWeight: =FontWeight.Semibold
+                    Height: =63
+                    Items: =["Advance"]
+                    OnChange: =Set(varAdvance, AdvanceRadio_1.Selected.Value);
+                    OnSelect: |-
+                        =Switch(
+                            varAdvance,
+                            AdvanceRadio_1.Selected.Value,
+                            Set(
+                                varAdvance,
+                                Blank()
+                            ),
+                            Blank(),
+                            Set(
+                                varAdvance,
+                                AdvanceRadio_1.Selected.Value
+                            );
+                            
+                        )
+                    RadioBorderColor: =RGBA(56, 96, 178, 1)
+                    RadioSelectionFill: =RGBA(51, 51, 51, 1)
+                    RadioSize: =30
+                    Reset: =If(varAdvance = Blank(),true,false)
+                    Width: =270
+                    X: =6
+                    Y: =3
+                    ZIndex: =1
+
+            Label5_3 As label:
+                Color: =RGBA(51, 51, 51, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Semibold
+                Text: ="Select the technology"
+                Width: =238
+                X: =40
+                Y: =40
+                ZIndex: =4
+
+        DataCard4 As dataCard.blankCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =100
+            Width: =1920
+            X: =0
+            Y: =3
+            ZIndex: =4
+
+            Button1 As button:
+                Font: =Font.Arial
+                Size: =13
+                Text: ="Submit"
+                Width: =128
+                X: =806
+                Y: =30
+                ZIndex: =1
+
+            Checkbox1 As checkbox:
+                CheckboxSize: =30
+                Color: =RGBA(56, 96, 178, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Semibold
+                Height: =45
+                Text: ="Save as a Draft"
+                Width: =183
+                X: =997
+                Y: =27
+                ZIndex: =2
 
