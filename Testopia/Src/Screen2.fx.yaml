@@ -424,11 +424,12 @@ Screen2 As screen:
             X: =6
             ZIndex: =9
 
-            DropdownCanvas4 As Dropdown.pcfdataset:
+            DropdownCanvas5 As Dropdown.pcfdataset:
                 DisplayMode: =DisplayMode.Edit
-                Height: =115
-                Width: =583
-                X: =640
-                Y: =100
+                Height: =51
+                Items: =Distinct('Exm.Technology', technology)
+                Width: =396
+                X: =650
+                Y: =154
                 ZIndex: =1
 
