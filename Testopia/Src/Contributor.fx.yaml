@@ -294,7 +294,7 @@
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =262
+            Height: =322
             Width: =1920
             X: =0
             Y: =1
