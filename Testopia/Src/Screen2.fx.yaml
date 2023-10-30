@@ -93,6 +93,7 @@ Screen2 As screen:
                 Set(PreviousLabel, SelectedLabel);
                 Set(SelectedLabel, Label11);
                 Set(Gal2,false);
+                Set(Gal3,false);
                 Set(Gal5,true);
                 Set(Cont4,true);
                 Set(Cont5,false);
