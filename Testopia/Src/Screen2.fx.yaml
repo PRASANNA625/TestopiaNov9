@@ -444,6 +444,7 @@ Screen2 As screen:
 
         Label19 As label:
             Align: =Align.Center
+            Font: =Font.Arial
             Height: =57
             Text: ="Select your technology"
             Width: =395
