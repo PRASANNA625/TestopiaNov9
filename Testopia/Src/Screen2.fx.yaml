@@ -105,6 +105,9 @@ Screen2 As screen:
             Fill: =If(SelectedLabel = Label11_1, Color.Blue, Color.LightGray)
             FontWeight: =FontWeight.Semibold
             Height: =60
+            OnSelect: |-
+                =Set(PreviousLabel, SelectedLabel);
+                Set(SelectedLabel, Label11_1);
             Size: =21
             Text: ="Review"
             Width: =260
@@ -118,6 +121,9 @@ Screen2 As screen:
             Fill: =If(SelectedLabel = Label11_2, Color.Blue, Color.LightGray)
             FontWeight: =FontWeight.Semibold
             Height: =60
+            OnSelect: |-
+                =Set(PreviousLabel, SelectedLabel);
+                Set(SelectedLabel, Label11_2);
             Size: =21
             Text: ="Approved/Rejected"
             Width: =300
