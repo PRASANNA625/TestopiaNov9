@@ -872,7 +872,7 @@
       "StyleName": "",
       "Type": "ControlInfo"
     },
-    "DropdownCanvas6": {
+    "DropdownCanvas7": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "X",
@@ -907,7 +907,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "DropdownCanvas6",
+      "Name": "DropdownCanvas7",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
