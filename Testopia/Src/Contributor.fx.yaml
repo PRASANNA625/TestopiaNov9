@@ -1,5 +1,5 @@
 "Contributor As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
-    Fill: =RGBA(255, 255, 255, 1)
+    Fill: =RGBA(247, 247, 247, 1)
 
     Canvas1 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
