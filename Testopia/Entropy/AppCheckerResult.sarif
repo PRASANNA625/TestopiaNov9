@@ -1923,17 +1923,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.ReviewStatus"
+                  "fullyQualifiedName": "App.ReviewMode"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.ReviewStatus",
+                  "fullyQualifiedName": "App.ReviewMode",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "ReviewStatus",
+                "member": "ReviewMode",
                 "module": "App",
                 "type": "App"
               }
@@ -1953,17 +1953,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.ReviewMode"
+                  "fullyQualifiedName": "App.ReviewStatus"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.ReviewMode",
+                  "fullyQualifiedName": "App.ReviewStatus",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "ReviewMode",
+                "member": "ReviewStatus",
                 "module": "App",
                 "type": "App"
               }
@@ -2176,36 +2176,6 @@
                 "member": "V_NextQuestionButton_QuestionScreenHide",
                 "module": "App",
                 "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen2.ReviewMode"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen2.ReviewMode",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "ReviewMode",
-                "module": "Screen2",
-                "type": "Screen2"
               }
             }
           ],

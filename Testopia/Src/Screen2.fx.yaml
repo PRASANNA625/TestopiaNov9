@@ -312,12 +312,15 @@ Screen2 As screen:
                 Fill: =RGBA(217, 217, 217, 1)
                 Font: =Font.Arial
                 Height: =219
-                OnSelect: |
+                OnSelect: |+
                     =//Select(Parent)//
+                    
                     If(CheckboxCanvas1.Checked = true,
-                       Collect(RemovedText, Button6.Text);
-                       Remove(Button6)
+                       ClearCollect(RemovedText, ThisItem);
+                       Remove(SelectedItem, ThisItem)
                     )
+                    
+                    
                 Text: =ThisItem.questions
                 Width: =461
                 Y: =13
@@ -337,8 +340,8 @@ Screen2 As screen:
                     ClearCollect(ReviewItems, Filter(Var2, question_id in ReviewItems.question_id));*/
                     
                     
-                    Set(CheckedColor, Color.Green); // Create a variable for checked color
-                    If(CheckboxCanvas1.Value = true, UpdateContext({CheckedColor: Color.Green}), UpdateContext({CheckedColor: Color.Black}));
+                    /*Set(CheckedColor, Color.Green); // Create a variable for checked color
+                    If(CheckboxCanvas1.Value = true, UpdateContext({CheckedColor: Color.Green}), UpdateContext({CheckedColor: Color.Black}));*/
                 Width: =160
                 X: =64
                 Y: =170
