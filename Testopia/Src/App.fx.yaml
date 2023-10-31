@@ -41,8 +41,10 @@ App As appinfo:
         Set(ReviewStatus,true);
         Set(ReviewMode,false);
         ClearCollect(ReviewItems, []);
-        ClearCollect(RemovedText, []);
-        ClearCollect(SelectedItem, Gallery5.AllItems);
+        
+        Collect(SelectedItem, Gallery5.AllItems);
+        //ClearCollect(RemovedText, { RemovedCol: "" })//
+        
         
         
     StartScreen: ='Start Screen'
