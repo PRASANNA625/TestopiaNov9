@@ -1,6 +1,8 @@
 "'Draft/Edit' As screen":
     Fill: =RGBA(247, 247, 247, 1)
-    OnVisible: = Set(varPageNumber,2);
+    OnVisible: |-
+        = Set(varPageNumber,1);
+         Set(varquestion,CountRows('Exm.Questions'))
 
     Container10 As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)
@@ -316,7 +318,7 @@
     drpPaginationSize As dropdown:
         ChevronBackground: =RGBA(122, 138, 143, 1)
         Height: =36
-        Items: =[5,10,15]
+        Items: =[8,16,32]
         Width: =86
         X: =1160
         Y: =939
