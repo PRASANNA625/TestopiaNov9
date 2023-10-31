@@ -19,9 +19,13 @@ App As appinfo:
                     technology_id = LookUp('Exm.Technology', technology = DropdownCanvas1.Selected.Value).technology_id
                     && Level_of_quetions_id = LookUp('Exm.Level_of_quetions', level = DropdownCanvas1_1.Selected.Value).Level_of_quetions_id
                 ),
+                "question_details_id",
                 "question_id",  // Include all the columns you need
                 "Level_of_quetions_id", // Include other columns you need
-                "technology_id" // Include other columns you need
+                "technology_id",
+                "options_id",
+                "answer_id",
+                "unit" // Include other columns you need
             )
         );
         /*ClearCollect(
@@ -34,7 +38,8 @@ App As appinfo:
                 ) // Include other columns you need
             )
         )*/
-        Set(varquestion,CountRows('Exm.Questions'))
+        Set(ReviewStatus,[]);
+        Set(ReviewMode,false)
     StartScreen: ='Start Screen'
     Theme: =PowerAppsTheme
 

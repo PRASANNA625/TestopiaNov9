@@ -280,7 +280,6 @@ Screen2 As screen:
                 =Gal5
             Width: =1904
             WrapCount: =4
-            X: =6
             Y: =225
             ZIndex: =6
 
@@ -323,11 +322,22 @@ Screen2 As screen:
                 DisplayMode: =DisplayMode.Edit
                 Height: =32
                 Label: =""
-                OnSelect: =Select(Parent)
+                OnSelect: |
+                    =
+                    UpdateContext({ReviewMode: true});
+                    If('Exm.Questions',question_id = ThisItem.questions_id,{ReviewStatus:true})
+                    Collect(ReviewItems, ThisItem);
                 Width: =160
                 X: =64
                 Y: =170
                 ZIndex: =7
+
+            Label13 As label:
+                OnSelect: =Select(Parent)
+                Text: ="Add to review"
+                X: =126
+                Y: =170
+                ZIndex: =8
 
         DropdownCanvas1_1 As Dropdown.pcfdataset:
             DefaultSelectedItems: =["Select the level"]
