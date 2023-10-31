@@ -3,14 +3,7 @@
     "Button6": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "//Select(Parent)//\nIf(CheckboxCanvas1.Checked = true,\n   Collect(RemovedText, Button6.Text);\n   Remove(Button6)\n)\n",
-          "InvariantPropertyName": "OnSelect",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "OnSelect",
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -3910,7 +3903,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label20",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4355,7 +4348,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%TemplateBrowseGalleryNextIcon.ID%",
       "Name": "NextArrow5",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
