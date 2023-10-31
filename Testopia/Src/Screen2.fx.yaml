@@ -322,11 +322,16 @@ Screen2 As screen:
                 DisplayMode: =DisplayMode.Edit
                 Height: =32
                 Label: =""
-                OnSelect: |
-                    =
-                    UpdateContext({ReviewMode: true});
-                    If('Exm.Questions',question_id = ThisItem.questions_id,{ReviewStatus:true})
-                    Collect(ReviewItems, ThisItem);
+                OnSelect: |+
+                    =UpdateContext({ReviewMode: true});
+                    If(
+                        LookUp(Var2, question_id = ThisItem.questions_id).question_id, 
+                        {ReviewStatus: true}
+                    );
+                    
+                    ClearCollect(ReviewItems, Filter(Var2, question_id in ReviewItems.question_id));
+                    
+                    
                 Width: =160
                 X: =64
                 Y: =170
@@ -334,10 +339,19 @@ Screen2 As screen:
 
             Label13 As label:
                 OnSelect: =Select(Parent)
-                Text: ="Add to review"
+                Text: |
+                    =//"Add to review"//
+                    If(ReviewStatus = true, Color.Green, Color.Black)
                 X: =126
                 Y: =170
                 ZIndex: =8
+
+            Label20 As label:
+                OnSelect: =Select(Parent)
+                Text: =
+                X: =40
+                Y: =40
+                ZIndex: =9
 
         DropdownCanvas1_1 As Dropdown.pcfdataset:
             DefaultSelectedItems: =["Select the level"]
