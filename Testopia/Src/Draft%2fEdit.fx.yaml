@@ -56,10 +56,10 @@
         TemplatePadding: =20
         TemplateSize: =445
         Visible: =vartab=1
-        Width: =1786
+        Width: =1859
         WrapCount: =2
-        X: =65
-        Y: =243
+        X: =38
+        Y: =289
         ZIndex: =5
 
         Container7 As groupContainer.manualLayoutContainer:
