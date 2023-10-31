@@ -320,10 +320,10 @@ Screen2 As screen:
                        //Remove(SelectedItem, ThisItem)//
                       
                     )*/
-                    /*If(CheckboxCanvas1.Checked = true,
+                    If(CheckboxCanvas1.Checked = true,
                        ClearCollect(RemovedText, { RemovedCol: Button6.Text })
                       
-                    )*/
+                    )
                     
                     
                     
@@ -339,7 +339,7 @@ Screen2 As screen:
                 OnCheck: |-
                     =//false//
                     If(CheckboxCanvas1.Checked = true,
-                       ClearCollect(RemovedText, { RemovedCol: Button6.Text })
+                       Collect(RemovedText, { RemovedCol: Button6.Text })
                       
                     )
                 OnSelect: |

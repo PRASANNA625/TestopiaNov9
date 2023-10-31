@@ -43,7 +43,7 @@ App As appinfo:
         ClearCollect(ReviewItems, []);
         
         Collect(SelectedItem, Gallery5.AllItems);
-        //ClearCollect(RemovedText, { RemovedCol: "" })//
+        ClearCollect(RemovedText, { RemovedCol: "" })
         
         
         
