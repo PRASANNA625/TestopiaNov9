@@ -339,9 +339,11 @@ Screen2 As screen:
 
             Label13 As label:
                 OnSelect: =Select(Parent)
-                Text: |
+                Text: |+
                     =//"Add to review"//
-                    If(ReviewStatus = true, Color.Green, Color.Black)
+                    //If(ReviewStatus = true, Color.Green, Color.Black)//
+                    If(ThisItem.questions_id in ReviewItems.question_id, "Added", "Add to Review")
+                    
                 X: =126
                 Y: =170
                 ZIndex: =8
