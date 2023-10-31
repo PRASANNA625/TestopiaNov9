@@ -290,8 +290,8 @@
         Font: =Font.Arial
         Height: =42
         OnSelect: |-
-            =//Navigate(Contributor,ScreenTransition.Fade)
-            CountRows(Gallery1.AllItems)
+            =Navigate(Contributor,ScreenTransition.Fade)
+            //CountRows(Gallery1.AllItems)
         Size: =13
         Text: ="Create more question"
         Width: =286
@@ -318,7 +318,7 @@
     drpPaginationSize As dropdown:
         ChevronBackground: =RGBA(122, 138, 143, 1)
         Height: =36
-        Items: =[8,16,32]
+        Items: =[8,10,15]
         Width: =86
         X: =1160
         Y: =939
