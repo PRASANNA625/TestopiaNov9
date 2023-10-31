@@ -38,9 +38,8 @@ App As appinfo:
                 ) // Include other columns you need
             )
         )*/
-        Set(ReviewStatus,[]);
-        Set(ReviewMode,false);
-        Set(varquestion,CountRows('Exm.Questions'))
+        Set(ReviewStatus,true);
+        Set(ReviewMode,false)
     StartScreen: ='Start Screen'
     Theme: =PowerAppsTheme
 
