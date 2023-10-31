@@ -42,7 +42,7 @@ App As appinfo:
         Set(ReviewMode,false);
         ClearCollect(ReviewItems, []);
         
-        ClearCollect(SelectedItem, Gallery5.AllItems);
+        Collect(SelectedItem, Gallery5.AllItems);
         ClearCollect(RemovedText, { RemovedCol: "" })
         
         

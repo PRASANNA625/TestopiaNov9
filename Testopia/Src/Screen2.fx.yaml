@@ -315,11 +315,16 @@ Screen2 As screen:
                 OnSelect: |+
                     =//Select(Parent)//
                     
-                    If(CheckboxCanvas1.Checked = true,
+                    /*If(CheckboxCanvas1.Checked = true,
                        ClearCollect(RemovedText, Button6.Text);
                        //Remove(SelectedItem, ThisItem)//
                       
+                    )*/
+                    If(CheckboxCanvas1.Checked = true,
+                       ClearCollect(RemovedText, { RemovedCol: Button6.Text })
+                      
                     )
+                    
                     
                     
                 Text: =ThisItem.questions
@@ -375,7 +380,7 @@ Screen2 As screen:
 
             Label20 As label:
                 OnSelect: =Select(Parent)
-                Text: =
+                Text: =ThisItem.questions_id
                 X: =40
                 Y: =40
                 ZIndex: =9
