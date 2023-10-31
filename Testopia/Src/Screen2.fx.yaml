@@ -200,7 +200,7 @@ Screen2 As screen:
         "Gallery5 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
             DelayItemLoading: =true
             Height: =709
-            Items: |
+            Items: |+
                 =//'Exm.Questions'//
                 
                 
@@ -269,6 +269,7 @@ Screen2 As screen:
                     )
                 )*/
                 Filter('Exm.Questions',questions_id in(ShowColumns(Var2,"question_id")))
+                
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             OnSelect: |
@@ -317,6 +318,16 @@ Screen2 As screen:
                 Width: =461
                 Y: =13
                 ZIndex: =6
+
+            CheckboxCanvas1 As Checkbox:
+                DisplayMode: =DisplayMode.Edit
+                Height: =32
+                Label: =""
+                OnSelect: =Select(Parent)
+                Width: =160
+                X: =64
+                Y: =170
+                ZIndex: =7
 
         DropdownCanvas1_1 As Dropdown.pcfdataset:
             DefaultSelectedItems: =["Select the level"]
