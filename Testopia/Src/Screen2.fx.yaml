@@ -200,7 +200,7 @@ Screen2 As screen:
         "Gallery5 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
             DelayItemLoading: =true
             Height: =709
-            Items: |
+            Items: |+
                 =//'Exm.Questions'//
                 
                 
@@ -269,6 +269,7 @@ Screen2 As screen:
                     )
                 )*/
                 Filter('Exm.Questions',questions_id in(ShowColumns(Var2,"question_id")))
+                
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             OnSelect: |
@@ -279,7 +280,6 @@ Screen2 As screen:
                 =Gal5
             Width: =1904
             WrapCount: =4
-            X: =6
             Y: =225
             ZIndex: =6
 
@@ -317,6 +317,27 @@ Screen2 As screen:
                 Width: =461
                 Y: =13
                 ZIndex: =6
+
+            CheckboxCanvas1 As Checkbox:
+                DisplayMode: =DisplayMode.Edit
+                Height: =32
+                Label: =""
+                OnSelect: |
+                    =
+                    UpdateContext({ReviewMode: true});
+                    If('Exm.Questions',question_id = ThisItem.questions_id,{ReviewStatus:true})
+                    Collect(ReviewItems, ThisItem);
+                Width: =160
+                X: =64
+                Y: =170
+                ZIndex: =7
+
+            Label13 As label:
+                OnSelect: =Select(Parent)
+                Text: ="Add to review"
+                X: =126
+                Y: =170
+                ZIndex: =8
 
         DropdownCanvas1_1 As Dropdown.pcfdataset:
             DefaultSelectedItems: =["Select the level"]
