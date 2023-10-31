@@ -312,7 +312,12 @@ Screen2 As screen:
                 Fill: =RGBA(217, 217, 217, 1)
                 Font: =Font.Arial
                 Height: =219
-                OnSelect: =Select(Parent)
+                OnSelect: |
+                    =//Select(Parent)//
+                    If(CheckboxCanvas1.Checked = true,
+                       Collect(RemovedText, Button6.Text);
+                       Remove(Button6)
+                    )
                 Text: =ThisItem.questions
                 Width: =461
                 Y: =13
@@ -322,27 +327,43 @@ Screen2 As screen:
                 DisplayMode: =DisplayMode.Edit
                 Height: =32
                 Label: =""
-                OnSelect: |+
-                    =UpdateContext({ReviewMode: true});
+                OnSelect: |
+                    =/*UpdateContext({ReviewMode: true});
                     If(
                         LookUp(Var2, question_id = ThisItem.questions_id).question_id, 
                         {ReviewStatus: true}
                     );
                     
-                    ClearCollect(ReviewItems, Filter(Var2, question_id in ReviewItems.question_id));
+                    ClearCollect(ReviewItems, Filter(Var2, question_id in ReviewItems.question_id));*/
                     
                     
+                    Set(CheckedColor, Color.Green); // Create a variable for checked color
+                    If(CheckboxCanvas1.Value = true, UpdateContext({CheckedColor: Color.Green}), UpdateContext({CheckedColor: Color.Black}));
                 Width: =160
                 X: =64
                 Y: =170
                 ZIndex: =7
 
             Label13 As label:
+                Color: |+
+                    =//RGBA(0, 0, 0, 1)//
+                    If(CheckboxCanvas1.Checked= true,Color.Green,Color.Black)
+                    
+                DisabledColor: |
+                    =//RGBA(166, 166, 166, 1)//
+                    If(CheckboxCanvas1.Checked= true,Color.Green,Color.Black)
+                DisabledFill: |-
+                    =//RGBA(0, 0, 0, 0)//
+                    If(CheckboxCanvas1.Checked= true,Color.Green,Color.Black)
+                Fill: |-
+                    =RGBA(0, 0, 0, 0)
+                    //If(CheckboxCanvas1.Checked= true,Color.Green,Color.Black)//
                 OnSelect: =Select(Parent)
                 Text: |+
                     =//"Add to review"//
                     //If(ReviewStatus = true, Color.Green, Color.Black)//
-                    If(ThisItem.questions_id in ReviewItems.question_id, "Added", "Add to Review")
+                    //If(ThisItem.questions_id in ReviewItems.question_id, "Added", "Add to Review")//
+                    If(CheckboxCanvas1.Checked= true,"Added","Add to review")
                     
                 X: =126
                 Y: =170

@@ -1,6 +1,6 @@
 App As appinfo:
     BackEnabled: =false
-    OnStart: |
+    OnStart: |+
         =Set(_guideStep,0);
         //ClearCollect(MatchingQuestionsCollection,'Exm.Question_details')//
         /*ClearCollect(
@@ -40,7 +40,10 @@ App As appinfo:
         )*/
         Set(ReviewStatus,true);
         Set(ReviewMode,false);
-        Set(varquestion,CountRows('Exm.Questions'));
+        ClearCollect(ReviewItems, []);
+        ClearCollect(RemovedText, [])
+        
+        
     StartScreen: ='Start Screen'
     Theme: =PowerAppsTheme
 
