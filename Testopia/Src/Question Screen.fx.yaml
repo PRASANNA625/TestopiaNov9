@@ -1,4 +1,5 @@
 "'Question Screen' As screen":
+    OnVisible: =Clear(C_SkipQuestionRownumber);
 
     QuestionContainer_QuestionScreen As groupContainer.manualLayoutContainer:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -40,7 +41,7 @@
                     RemoveIf(C_SkipQuestionRownumber,Rownumber =ThisItem.Rownumber);
                     Collect(C_ExamResult,{question_id : ThisItem.question_id, response_id : OptionsRadio_QuestionScreen.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1Boptions_id', answer_id : ThisItem.answer_id, response :  OptionsRadio_QuestionScreen.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1Boptions', candidate_id : CandidateID});
                     
-                    If(IsBlank(OptionsRadio_QuestionScreen.Selected),Set(V_NextQuestionButtonNameChange_QuestionScreen,"Skip >"),If(V_QuestionIncrement = CountRows(C_ExamQuestion) ,Set(V_NextQuestionButtonNameChange_QuestionScreen,"Finish >"),Set(V_NextQuestionButtonNameChange_QuestionScreen,"Next >")));
+                    /*If(IsBlank(OptionsRadio_QuestionScreen.Selected),Set(V_NextQuestionButtonNameChange_QuestionScreen,"Skip >"),If(V_QuestionIncrement = CountRows(C_ExamQuestion) ,Set(V_NextQuestionButtonNameChange_QuestionScreen,"Finish >"),Set(V_NextQuestionButtonNameChange_QuestionScreen,"Next >")));*/
                 PaddingRight: =0.00
                 PaddingTop: =14.06
                 RadioBackgroundFill: =RGBA(175, 191, 224, 1)
@@ -79,13 +80,15 @@
                 DisabledBorderColor: =RGBA(56, 96, 178, 1)
                 DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(56, 96, 178, 1)
+                DisplayMode: =If(OptionsRadio_QuestionScreen.Selected.answer_id,DisplayMode.Edit,DisplayMode.Disabled)
                 Font: =Font.Arial
                 Height: =56
                 HoverBorderColor: =RGBA(56, 96, 178, 1)
                 HoverFill: =RGBA(56, 96, 178, 1)
                 OnSelect: |
                     =
-                    If(IsBlank(OptionsRadio_QuestionScreen),RemoveIf(C_SkipQuestionRownumber,Rownumber =ThisItem.Rownumber);Collect(C_SkipQuestionRownumber, {Rownumber : ThisItem.Rownumber, Question_id : ThisItem.question_id}));
+                    //If(IsBlank(OptionsRadio_QuestionScreen),RemoveIf(C_SkipQuestionRownumber,Rownumber =ThisItem.Rownumber));
+                    //Collect(C_SkipQuestionRownumber, {Rownumber : ThisItem.Rownumber, Question_id : ThisItem.question_id}));
                     
                     
                     If(CountRows(C_ExamQuestion) > V_QuestionIncrement, Set(V_QuestionIncrement,V_QuestionIncrement+1);
@@ -93,7 +96,7 @@
                     Set(V_QuestionContainerHide,false);Set(V_GetResultContainerQuestionScreenHide,true));
                     
                     
-                    If(V_QuestionIncrement = CountRows(C_ExamQuestion) ,Set(V_NextQuestionButtonNameChange_QuestionScreen,"Finish >"),If(IsBlank(OptionsRadio_QuestionScreen),Set(V_NextQuestionButtonNameChange_QuestionScreen,"Try Later >")));
+                    /*If(V_QuestionIncrement = CountRows(C_ExamQuestion) ,Set(V_NextQuestionButtonNameChange_QuestionScreen,"Finish >"),If(IsBlank(OptionsRadio_QuestionScreen),Set(V_NextQuestionButtonNameChange_QuestionScreen,"Try Later >")));*/
                 PaddingRight: =7.03
                 PaddingTop: =7.03
                 PressedBorderColor: =RGBA(56, 96, 178, 1)
@@ -104,7 +107,9 @@
                 RadiusTopLeft: =4
                 RadiusTopRight: =4
                 Size: =20
-                Text: =V_NextQuestionButtonNameChange_QuestionScreen
+                Text: |-
+                    =//V_NextQuestionButtonNameChange_QuestionScreen
+                    "Next >"
                 Width: =176
                 X: =945
                 Y: =514
@@ -172,7 +177,9 @@
                 PressedFill: =
                 Text: ="Try Later"
                 Underline: =true
-                Visible: =If(V_NextQuestionButtonNameChange_QuestionScreen = "Next >",true,If(V_NextQuestionButtonNameChange_QuestionScreen = "Finish >",true,false))
+                Visible: |-
+                    =//If(V_NextQuestionButtonNameChange_QuestionScreen = "Next >",true,If(V_NextQuestionButtonNameChange_QuestionScreen = "Finish >",true,false))
+                    true
                 X: =1166
                 Y: =514
                 ZIndex: =10

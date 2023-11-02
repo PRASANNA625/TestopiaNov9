@@ -333,7 +333,9 @@ Screen2 As screen:
                 ZIndex: =6
 
             CheckboxCanvas1 As Checkbox:
+                BasePaletteColor: =
                 DisplayMode: =DisplayMode.Edit
+                FontSize: =0
                 Height: =32
                 Label: =""
                 OnCheck: |

@@ -101,6 +101,7 @@
 
             RadioGroupCanvas2_1 As Radio.pcfdataset:
                 DisplayMode: =DisplayMode.Edit
+                FontSize: =0
                 Height: =46
                 Items: =["1"]
                 OnSelect: =
