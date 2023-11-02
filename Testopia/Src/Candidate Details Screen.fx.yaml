@@ -433,7 +433,7 @@
                         Tooltip: =Parent.DisplayName
                         Width: =513
                         X: =150
-                        Y: =64
+                        Y: =61
                         ZIndex: =2
 
                     Label8_1 As label:

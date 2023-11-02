@@ -1,4 +1,4 @@
-"'Reult Screen' As screen":
+"'Result Screen' As screen":
 
     Container2 As groupContainer.manualLayoutContainer:
         BorderColor: =RGBA(0, 0, 0, 0)

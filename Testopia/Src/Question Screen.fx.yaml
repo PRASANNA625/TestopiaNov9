@@ -1,5 +1,6 @@
 "'Question Screen' As screen":
-    OnVisible: =Clear(C_SkipQuestionRownumber);
+    OnVisible: |
+        =Clear(C_SkipQuestionRownumber);
 
     QuestionContainer_QuestionScreen As groupContainer.manualLayoutContainer:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -376,10 +377,27 @@
             HoverBorderColor: =RGBA(219, 219, 219, 1)
             HoverColor: =RGBA(70, 70, 70, 1)
             HoverFill: =RGBA(219, 219, 219, 1)
-            OnSelect: |
-                =
-                
-                Navigate('Reult Screen');
+            OnSelect: |-
+                =Navigate('Result Screen');
+                Patch(
+                    'Exm.Exam',
+                    Defaults('Exm.Exam'),
+                    {
+                        candidate_id: CandidateID,
+                        exam_date: DateValue(
+                            Text(
+                                Today(),
+                                "dd/mm/yyyy"
+                            )
+                        ),
+                        start_time: varExmstarttime,
+                        end_time: Text(
+                            Now(),
+                            "hh:mm:ss"
+                        ),
+                        total_question_allocated: CountRows(C_ExamQuestion)
+                    }
+                )
             PaddingRight: =7.03
             PaddingTop: =7.03
             PressedBorderColor: =RGBA(219, 219, 219, 1)

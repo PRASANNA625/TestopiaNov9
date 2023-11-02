@@ -2253,17 +2253,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.ReviewStatus"
+                  "fullyQualifiedName": "App.ReviewMode"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.ReviewStatus",
+                  "fullyQualifiedName": "App.ReviewMode",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "ReviewStatus",
+                "member": "ReviewMode",
                 "module": "App",
                 "type": "App"
               }
@@ -2283,17 +2283,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.ReviewMode"
+                  "fullyQualifiedName": "App.ReviewStatus"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.ReviewMode",
+                  "fullyQualifiedName": "App.ReviewStatus",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "ReviewMode",
+                "member": "ReviewStatus",
                 "module": "App",
                 "type": "App"
               }
