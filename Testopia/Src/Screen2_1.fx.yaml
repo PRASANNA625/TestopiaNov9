@@ -1,4 +1,4 @@
-Screen2 As screen:
+Screen2_1 As screen:
     Fill: =RGBA(242, 246, 247, 1)
     OnVisible: |+
         =//ClearCollect(MatchingQuestionsCollection,'Exm.Question_details')//
@@ -43,8 +43,8 @@ Screen2 As screen:
             Var1,
             Filter(
                 'Exm.Question_details',
-                technology_id = LookUp('Exm.Technology', technology = DropdownCanvas1.Selected.Value).technology_id
-                && Level_of_quetions_id = LookUp('Exm.Level_of_quetions', level = DropdownCanvas1_1.Selected.Value).Level_of_quetions_id
+                technology_id = LookUp('Exm.Technology', technology = DropdownCanvas1_2.Selected.Value).technology_id
+                && Level_of_quetions_id = LookUp('Exm.Level_of_quetions', level = DropdownCanvas1_3.Selected.Value).Level_of_quetions_id
             )
         );
         ClearCollect(
@@ -52,8 +52,8 @@ Screen2 As screen:
              ShowColumns(
                Filter(
                     'Exm.Question_details',
-                    technology_id = LookUp('Exm.Technology', technology = DropdownCanvas1.Selected.Value).technology_id
-                    && Level_of_quetions_id = LookUp('Exm.Level_of_quetions', level = DropdownCanvas1_1.Selected.Value).Level_of_quetions_id
+                    technology_id = LookUp('Exm.Technology', technology = DropdownCanvas1_2.Selected.Value).technology_id
+                    && Level_of_quetions_id = LookUp('Exm.Level_of_quetions', level = DropdownCanvas1_3.Selected.Value).Level_of_quetions_id
                 ),
                 "question_id",  // Include all the columns you need
                 "Level_of_quetions_id", // Include other columns you need
@@ -63,7 +63,7 @@ Screen2 As screen:
         
         
 
-    Container3 As groupContainer.manualLayoutContainer:
+    Container3_1 As groupContainer.manualLayoutContainer:
         Fill: =RGBA(214, 221, 224, 1)
         Height: =59
         Width: =763
@@ -71,16 +71,16 @@ Screen2 As screen:
         Y: =56
         ZIndex: =1
 
-        Label11 As label:
+        Label11_3 As label:
             Align: =Align.Center
-            Color: =If(SelectedLabel = Label11, Color.White, Color.Black)
+            Color: =If(SelectedLabel = Label11_3, Color.White, Color.Black)
             Fill: |
                 =//If(SelectedLabel = Label11, Blue, Gray),//
-                If(SelectedLabel = Label11, RGBA(58,78,178,1), Color.LightGray)
+                If(SelectedLabel = Label11_3, RGBA(58,78,178,1), Color.LightGray)
                 
                 //Color: If(SelectedLabel = Label1, White, Black)//
             Font: =Font.Arial
-            Height: =60
+            Height: =59
             OnSelect: |+
                 =
                 /*Set(Label1Color, DarkBlue);
@@ -91,7 +91,7 @@ Screen2 As screen:
                 Set(Label3FontColor, Black);*/
                 
                 Set(PreviousLabel, SelectedLabel);
-                Set(SelectedLabel, Label11);
+                Set(SelectedLabel, Label11_3);
                 Set(Gal2,false);
                 Set(Gal3,false);
                 Set(Gal5,true);
@@ -104,15 +104,15 @@ Screen2 As screen:
             Width: =247
             ZIndex: =1
 
-        Label11_1 As label:
+        Label11_4 As label:
             Align: =Align.Center
-            Color: =If(SelectedLabel = Label11_1, Color.White, Color.Black)
-            Fill: =If(SelectedLabel = Label11_1, Color.Blue, Color.LightGray)
+            Color: =If(SelectedLabel = Label11_4, Color.White, Color.Black)
+            Fill: =If(SelectedLabel = Label11_4, Color.Blue, Color.LightGray)
             Font: =Font.Arial
-            Height: =60
+            Height: =59
             OnSelect: |-
                 =Set(PreviousLabel, SelectedLabel);
-                Set(SelectedLabel, Label11_1);
+                Set(SelectedLabel, Label11_4);
                 Set(Gal5,false);
                 Set(Gal3,false);
                 Set(Gal2,true);
@@ -124,15 +124,15 @@ Screen2 As screen:
             X: =247
             ZIndex: =2
 
-        Label11_2 As label:
+        Label11_5 As label:
             Align: =Align.Center
-            Color: =If(SelectedLabel = Label11_2, Color.White, Color.Black)
-            Fill: =If(SelectedLabel = Label11_2, Color.Blue, Color.LightGray)
+            Color: =If(SelectedLabel = Label11_5, Color.White, Color.Black)
+            Fill: =If(SelectedLabel = Label11_5, Color.Blue, Color.LightGray)
             Font: =Font.Arial
-            Height: =60
+            Height: =59
             OnSelect: |+
                 =Set(PreviousLabel, SelectedLabel);
-                Set(SelectedLabel, Label11_2);
+                Set(SelectedLabel, Label11_5);
                 Set(Gal2,false);
                 Set(Gal5,false);
                 Set(Cont4,false);
@@ -145,7 +145,7 @@ Screen2 As screen:
             X: =494
             ZIndex: =3
 
-    Container4 As groupContainer.manualLayoutContainer:
+    Container4_1 As groupContainer.manualLayoutContainer:
         Height: =934
         Visible: =Cont4
         Width: =1904
@@ -153,7 +153,7 @@ Screen2 As screen:
         Y: =146
         ZIndex: =2
 
-        Label12_2 As label:
+        Label12_4 As label:
             Font: =Font.Arial
             FontWeight: =FontWeight.Bold
             Height: =16
@@ -163,7 +163,7 @@ Screen2 As screen:
             Y: =82
             ZIndex: =2
 
-        Label12_3 As label:
+        Label12_5 As label:
             Font: =Font.Arial
             FontWeight: =FontWeight.Bold
             Height: =29
@@ -172,7 +172,7 @@ Screen2 As screen:
             Y: =82
             ZIndex: =3
 
-        DropdownCanvas1 As Dropdown.pcfdataset:
+        DropdownCanvas1_2 As Dropdown.pcfdataset:
             DefaultSelectedItems: =["Select the technology"]
             DisplayMode: =DisplayMode.Edit
             Height: =46
@@ -192,7 +192,7 @@ Screen2 As screen:
             Y: =126
             ZIndex: =4
 
-        "Gallery5 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+        "Gallery5_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
             DelayItemLoading: =true
             Height: =709
             Items: |
@@ -266,7 +266,7 @@ Screen2 As screen:
                 //Filter('Exm.Questions',questions_id in(ShowColumns(Var2,"question_id")))//
                 
                    If(
-                    DropdownCanvas1.Selected.Value = "Select the technology" || DropdownCanvas1_1.Selected.Value = "Select the level",
+                    DropdownCanvas1_2.Selected.Value = "Select the technology" || DropdownCanvas1_3.Selected.Value = "Select the level",
                     'Exm.Questions',
                     Filter(
                         'Exm.Questions',
@@ -286,7 +286,7 @@ Screen2 As screen:
             Y: =225
             ZIndex: =6
 
-            NextArrow5 As icon.ChevronRight:
+            NextArrow5_1 As icon.ChevronRight:
                 AccessibleLabel: =Self.Tooltip
                 Color: =RGBA(166, 166, 166, 1)
                 Height: =50
@@ -302,7 +302,7 @@ Screen2 As screen:
                 Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
                 ZIndex: =4
 
-            Separator5 As rectangle:
+            Separator5_1 As rectangle:
                 Fill: =RGBA(255, 255, 255, 1)
                 Height: =8
                 OnSelect: =Select(Parent)
@@ -310,92 +310,16 @@ Screen2 As screen:
                 Y: =Parent.TemplateHeight - Self.Height
                 ZIndex: =5
 
-            Button6 As button:
-                DisplayMode: =DisplayMode.Disabled
-                Fill: =RGBA(217, 217, 217, 1)
-                Font: =Font.Arial
-                Height: =219
-                OnSelect: |+
-                    =//Select(Parent)//
-                    
-                    /*If(CheckboxCanvas1.Checked = true,
-                       ClearCollect(RemovedText, Button6.Text);
-                       //Remove(SelectedItem, ThisItem)//
-                      
-                    )*/
-                    
-                    
-                    
-                    
-                Text: =ThisItem.questions
-                Width: =461
-                Y: =13
+            Image9 As image:
+                Height: =205
+                Image: ='Frame 329'
+                OnSelect: =Select(Parent)
+                Width: =410
+                X: =40
+                Y: =40
                 ZIndex: =6
 
-            CheckboxCanvas1 As Checkbox:
-                BasePaletteColor: =
-                DisplayMode: =DisplayMode.Edit
-                FontSize: =0
-                Height: =32
-                Label: =""
-                OnCheck: |
-                    =//false//
-                    If(CheckboxCanvas1.Checked = true,
-                       Collect(RemovedText, { RemovedCol: Button6.Text })
-                      
-                    )
-                    /*If(
-                        CheckboxCanvas1.Checked,
-                        Switch(
-                            DropdownCanvas1.Selected.Value & DropdownCanvas1_1.Selected.Value,
-                            "SQLBeginner", ClearCollect(RemovedText1, { RemovedCol1: Button6.Text }),
-                            "SQLAdvanced", ClearCollect(RemovedText1, { RemovedCol2: Button6.Text }),
-                            "PowerBIAdvanced", ClearCollect(RemovedText1, { RemovedCol3: Button6.Text })
-                        )
-                    )*/
-                OnSelect: |
-                    =/*UpdateContext({ReviewMode: true});
-                    If(
-                        LookUp(Var2, question_id = ThisItem.questions_id).question_id, 
-                        {ReviewStatus: true}
-                    );
-                    
-                    ClearCollect(ReviewItems, Filter(Var2, question_id in ReviewItems.question_id));*/
-                    
-                    
-                    /*Set(CheckedColor, Color.Green); // Create a variable for checked color
-                    If(CheckboxCanvas1.Value = true, UpdateContext({CheckedColor: Color.Green}), UpdateContext({CheckedColor: Color.Black}));*/
-                Width: =160
-                X: =64
-                Y: =170
-                ZIndex: =7
-
-            Label13 As label:
-                Color: |+
-                    =//RGBA(0, 0, 0, 1)//
-                    If(CheckboxCanvas1.Checked= true,Color.Green,Color.Black)
-                    
-                DisabledColor: |
-                    =//RGBA(166, 166, 166, 1)//
-                    If(CheckboxCanvas1.Checked= true,Color.Green,Color.Black)
-                DisabledFill: |-
-                    =//RGBA(0, 0, 0, 0)//
-                    If(CheckboxCanvas1.Checked= true,Color.Green,Color.Black)
-                Fill: |-
-                    =RGBA(0, 0, 0, 0)
-                    //If(CheckboxCanvas1.Checked= true,Color.Green,Color.Black)//
-                OnSelect: =Select(Parent)
-                Text: |+
-                    =//"Add to review"//
-                    //If(ReviewStatus = true, Color.Green, Color.Black)//
-                    //If(ThisItem.questions_id in ReviewItems.question_id, "Added", "Add to Review")//
-                    If(CheckboxCanvas1.Checked= true,"Added","Add to review")
-                    
-                X: =126
-                Y: =170
-                ZIndex: =8
-
-        DropdownCanvas1_1 As Dropdown.pcfdataset:
+        DropdownCanvas1_3 As Dropdown.pcfdataset:
             DefaultSelectedItems: =["Select the level"]
             DisplayMode: =DisplayMode.Edit
             Height: =46
@@ -415,7 +339,7 @@ Screen2 As screen:
             Y: =126
             ZIndex: =7
 
-        "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+        "Gallery2_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
             DelayItemLoading: =true
             Height: =709
             Items: =RemovedText
@@ -430,7 +354,7 @@ Screen2 As screen:
             Y: =225
             ZIndex: =8
 
-            NextArrow1 As icon.ChevronRight:
+            NextArrow1_1 As icon.ChevronRight:
                 AccessibleLabel: =Self.Tooltip
                 Color: =RGBA(166, 166, 166, 1)
                 Height: =50
@@ -446,7 +370,7 @@ Screen2 As screen:
                 Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
                 ZIndex: =4
 
-            Separator1 As rectangle:
+            Separator1_1 As rectangle:
                 Fill: =RGBA(255, 255, 255, 1)
                 Height: =8
                 OnSelect: =Select(Parent)
@@ -454,14 +378,14 @@ Screen2 As screen:
                 Y: =Parent.TemplateHeight - Self.Height
                 ZIndex: =5
 
-            Rectangle1 As rectangle:
-                Height: =Parent.TemplateHeight - Separator1.Height
+            Rectangle1_1 As rectangle:
+                Height: =Parent.TemplateHeight - Separator1_1.Height
                 OnSelect: =Select(Parent)
                 Visible: =ThisItem.IsSelected
                 Width: =4
                 ZIndex: =6
 
-            Button2 As button:
+            Button2_1 As button:
                 DisplayMode: =DisplayMode.Disabled
                 Fill: =RGBA(217, 217, 217, 1)
                 Height: =243
@@ -471,7 +395,7 @@ Screen2 As screen:
                 X: =4
                 ZIndex: =7
 
-    Container5 As groupContainer.manualLayoutContainer:
+    Container5_1 As groupContainer.manualLayoutContainer:
         Height: =934
         Visible: =Cont5
         Width: =1904
@@ -479,7 +403,7 @@ Screen2 As screen:
         Y: =146
         ZIndex: =3
 
-        DropdownCanvas10 As Dropdown.pcfdataset:
+        DropdownCanvas10_1 As Dropdown.pcfdataset:
             DisplayMode: =DisplayMode.Edit
             Height: =70
             Items: =Distinct('Exm.Technology', technology)
@@ -488,7 +412,7 @@ Screen2 As screen:
             Y: =100
             ZIndex: =1
 
-        Label19 As label:
+        Label19_1 As label:
             Align: =Align.Center
             Font: =Font.Arial
             FontWeight: =FontWeight.Bold
