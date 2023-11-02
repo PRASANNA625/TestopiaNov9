@@ -194,7 +194,7 @@ Screen2 As screen:
 
         "Gallery5 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
             DelayItemLoading: =true
-            Height: =709
+            Height: =732
             Items: |
                 =//'Exm.Questions'//
                 
@@ -283,7 +283,7 @@ Screen2 As screen:
                 =Gal5
             Width: =1904
             WrapCount: =4
-            Y: =225
+            Y: =201
             ZIndex: =6
 
             NextArrow5 As icon.ChevronRight:
@@ -312,9 +312,9 @@ Screen2 As screen:
 
             Button6 As button:
                 DisplayMode: =DisplayMode.Disabled
-                Fill: =RGBA(217, 217, 217, 1)
+                Fill: =RGBA(255, 255, 255, 1)
                 Font: =Font.Arial
-                Height: =219
+                Height: =215
                 OnSelect: |+
                     =//Select(Parent)//
                     
@@ -323,12 +323,13 @@ Screen2 As screen:
                        //Remove(SelectedItem, ThisItem)//
                       
                     )*/
+                    RGBA(255,255,255,1)
                     
                     
                     
                     
                 Text: =ThisItem.questions
-                Width: =461
+                Width: =340
                 Y: =13
                 ZIndex: =6
 
