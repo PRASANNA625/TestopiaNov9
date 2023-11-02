@@ -76,7 +76,7 @@ Screen2 As screen:
             Color: =If(SelectedLabel = Label11, Color.White, Color.Black)
             Fill: |
                 =//If(SelectedLabel = Label11, Blue, Gray),//
-                If(SelectedLabel = Label11, RGBA(58,78,178,1), Color.LightGray)
+                If(SelectedLabel = Label11, RGBA(58,78,178,1), RGBA(231,231,231,1))
                 
                 //Color: If(SelectedLabel = Label1, White, Black)//
             Font: =Font.Arial
@@ -107,7 +107,7 @@ Screen2 As screen:
         Label11_1 As label:
             Align: =Align.Center
             Color: =If(SelectedLabel = Label11_1, Color.White, Color.Black)
-            Fill: =If(SelectedLabel = Label11_1, Color.Blue, Color.LightGray)
+            Fill: =If(SelectedLabel = Label11_1, RGBA(58,78,178,1), RGBA(231,231,231,1))
             Font: =Font.Arial
             Height: =60
             OnSelect: |-
@@ -127,7 +127,7 @@ Screen2 As screen:
         Label11_2 As label:
             Align: =Align.Center
             Color: =If(SelectedLabel = Label11_2, Color.White, Color.Black)
-            Fill: =If(SelectedLabel = Label11_2, Color.Blue, Color.LightGray)
+            Fill: =If(SelectedLabel = Label11_2, RGBA(58,78,178,1), RGBA(231,231,231,1))
             Font: =Font.Arial
             Height: =60
             OnSelect: |+
@@ -173,6 +173,7 @@ Screen2 As screen:
             ZIndex: =3
 
         DropdownCanvas1 As Dropdown.pcfdataset:
+            BasePaletteColor: =RGBA(255, 255, 255, 1)
             DefaultSelectedItems: =["Select the technology"]
             DisplayMode: =DisplayMode.Edit
             Height: =46
@@ -194,7 +195,7 @@ Screen2 As screen:
 
         "Gallery5 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
             DelayItemLoading: =true
-            Height: =732
+            Height: =503
             Items: |
                 =//'Exm.Questions'//
                 
@@ -398,6 +399,15 @@ Screen2 As screen:
                 Y: =170
                 ZIndex: =8
 
+            Image11 As image:
+                Height: =34
+                Image: ='Frame 344'
+                OnSelect: =Select(Parent)
+                Width: =74
+                X: =262
+                Y: =13
+                ZIndex: =9
+
         DropdownCanvas1_1 As Dropdown.pcfdataset:
             DefaultSelectedItems: =["Select the level"]
             DisplayMode: =DisplayMode.Edit
@@ -473,6 +483,17 @@ Screen2 As screen:
                 Width: =458
                 X: =4
                 ZIndex: =7
+
+        ButtonCanvas1 As Button:
+            BasePaletteColor: =RGBA(58,78,178,1)
+            DisplayMode: =DisplayMode.Edit
+            Height: =55
+            Text: ="Review Now"
+            Visible: =Gal5
+            Width: =199
+            X: =803
+            Y: =831
+            ZIndex: =10
 
     Container5 As groupContainer.manualLayoutContainer:
         Height: =934
