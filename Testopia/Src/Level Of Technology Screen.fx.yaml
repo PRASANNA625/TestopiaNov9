@@ -94,10 +94,10 @@
                     V_PreviousQuestionButton_QuestionScreenHide,
                     false
                 );
-                /*Set(
+                Set(
                     V_NextQuestionButtonNameChange_QuestionScreen,
                     "Try Later >"
-                );*/
+                );
                 Set(
                     V_QuestionContainerHide,
                     true
@@ -110,8 +110,17 @@
                 ,
                 Notify("Select All The Level")
             );
-            Set(V_GetResultContainerQuestionScreenHide,false);
-            Set(varExmstarttime,Text(Now(),"hh:mm:ss"));
+            Set(
+                V_GetResultContainerQuestionScreenHide,
+                false
+            );
+            Set(
+                varExmstarttime,
+                Text(
+                    Now(),
+                    "hh:mm:ss"
+                )
+            );
         PaddingRight: =7.03
         PaddingTop: =7.03
         PressedBorderColor: =RGBA(56, 96, 178, 1)
