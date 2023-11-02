@@ -481,11 +481,13 @@ Screen2 As screen:
             DisplayMode: =DisplayMode.Edit
             Height: =55
             OnSelect: |-
-                =Set(Gal2,false);
-                Set(Gal3,false);
-                Set(Gal5,true);
-                Set(Cont4,true);
-                Set(Cont5,false);
+                =
+                Set(SelectedLabel, Label11_1); // Select the corresponding label
+                Set(Gal5, false); // Hide Gallery5
+                Set(Gal3, false); // Hide Gallery3
+                Set(Gal2, true); // Show Gallery2
+                Set(Cont4, true); // Show Container4
+                Set(Cont5, false); // Hide Container5
             Text: ="Review Now"
             Visible: =Gal5
             Width: =199
