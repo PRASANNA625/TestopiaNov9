@@ -312,7 +312,9 @@ Screen2 As screen:
 
             Button6 As button:
                 DisplayMode: =DisplayMode.Disabled
-                Fill: =RGBA(255, 255, 255, 1)
+                Fill: |-
+                    =//RGBA(255, 255, 255, 1)//
+                    Color.White
                 Font: =Font.Arial
                 Height: =215
                 OnSelect: |+
