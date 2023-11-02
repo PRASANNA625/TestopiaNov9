@@ -303,14 +303,6 @@ Screen2 As screen:
                 Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
                 ZIndex: =4
 
-            Separator5 As rectangle:
-                Fill: =RGBA(255, 255, 255, 1)
-                Height: =8
-                OnSelect: =Select(Parent)
-                Width: =Parent.TemplateWidth
-                Y: =Parent.TemplateHeight - Self.Height
-                ZIndex: =5
-
             Button6 As button:
                 DisplayMode: =DisplayMode.Disabled
                 Fill: |-
@@ -488,6 +480,12 @@ Screen2 As screen:
             BasePaletteColor: =RGBA(58,78,178,1)
             DisplayMode: =DisplayMode.Edit
             Height: =55
+            OnSelect: |-
+                =Set(Gal2,false);
+                Set(Gal3,false);
+                Set(Gal5,true);
+                Set(Cont4,true);
+                Set(Cont5,false);
             Text: ="Review Now"
             Visible: =Gal5
             Width: =199
