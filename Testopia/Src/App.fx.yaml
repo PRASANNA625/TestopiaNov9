@@ -11,7 +11,7 @@ App As appinfo:
                 && Level_of_quetions_id = LookUp('Exm.Level_of_quetions', level = DropdownCanvas1_1.Selected.Value).Level_of_quetions_id
             )
         )*/
-        ClearCollect(
+        /*ClearCollect(
             Var2,
              ShowColumns(
                Filter(
@@ -27,7 +27,7 @@ App As appinfo:
                 "answer_id",
                 "unit" // Include other columns you need
             )
-        );
+        );*/
         /*ClearCollect(
             Var2,Distinct(Var2,
              
@@ -54,7 +54,7 @@ App As appinfo:
                 RemovedCol3: Button6.Text
             }
         )*/
-        //Collect(RemovedText, { RemovedCol: Button6.Text,RemovedId: Label25.Text })//
+        Collect(RemovedText, { RemovedCol: Button6.Text,RemovedId: Label25.Text })
           
         
          
