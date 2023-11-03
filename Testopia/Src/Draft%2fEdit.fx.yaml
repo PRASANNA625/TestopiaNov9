@@ -2,7 +2,8 @@
     Fill: =RGBA(247, 247, 247, 1)
     OnVisible: |-
         = Set(varPageNumber,1);
-         Set(varquestion,CountRows('Exm.Questions'))
+         Set(varquestion,CountRows('Exm.Questions'));
+         Set(vartab,1);
 
     Container10 As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)
