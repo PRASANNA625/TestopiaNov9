@@ -138,9 +138,10 @@
     "Question Screen",
     "Result Screen",
     "Role",
-    "Screen2",
+    "Reviwer Screen",
     "Screen2_1",
     "Contributor",
-    "Draft/Edit"
+    "Draft/Edit",
+    "ReviewQuestionScreen"
   ]
 }
