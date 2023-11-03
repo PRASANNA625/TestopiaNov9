@@ -351,7 +351,7 @@
                 FontSize: =0
                 Height: =32
                 Label: =""
-                OnCheck: |
+                OnCheck: |+
                     =//false//
                     /*If(CheckboxCanvas1.Checked = true,
                        Collect(RemovedText, { RemovedCol: Button6.Text })
@@ -366,12 +366,20 @@
                             "PowerBIAdvanced", ClearCollect(RemovedText1, { RemovedCol3: Button6.Text })
                         )
                     )*/
-                    If(CheckboxCanvas1.Checked = true,
-                        Collect(RemovedText, { 
+                    /*If(CheckboxCanvas1.Checked = true,
+                        Collect(RemovedText1, { 
                             RemovedCol: Button6.Text, 
                             RemovedId: Label25.Text 
                         })
+                    )*/
+                    
+                    If(Checkbox1.Value = true,
+                        Collect(RemovedText1, { 
+                            RemovedCol: ThisItem.questions, 
+                            RemovedId: ThisItem.questions_id 
+                        })
                     )
+                    
                 OnSelect: |
                     =/*UpdateContext({ReviewMode: true});
                     If(
@@ -454,7 +462,7 @@
         "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
             DelayItemLoading: =true
             Height: =709
-            Items: =RemovedText
+            Items: =RemovedText1
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplatePadding: =0
