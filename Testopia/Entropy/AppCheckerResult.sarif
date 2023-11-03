@@ -54,12 +54,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen2.Container4.Gallery5.Items"
+                  "fullyQualifiedName": "'Reviwer Screen'.Container4.Gallery5.Items"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen2.Container4.Gallery5.Items",
+                  "fullyQualifiedName": "'Reviwer Screen'.Container4.Gallery5.Items",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -72,8 +72,8 @@
               },
               "properties": {
                 "member": "Items",
-                "module": "Screen2",
-                "type": "Screen2.Container4.Gallery5"
+                "module": "Reviwer Screen",
+                "type": "'Reviwer Screen'.Container4.Gallery5"
               }
             }
           ],
@@ -1604,18 +1604,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen2"
+                  "fullyQualifiedName": "'Reviwer Screen'.Container4.Gallery2.Label20.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen2",
+                  "fullyQualifiedName": "'Reviwer Screen'.Container4.Gallery2.Label20.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "module": "Screen2",
-                "type": "Screen2"
+                "member": "TabIndex",
+                "module": "Reviwer Screen",
+                "type": "'Reviwer Screen'.Container4.Gallery2.Label20"
               }
             }
           ],
@@ -1623,29 +1624,29 @@
             "id": "issue"
           },
           "properties": {
-            "level": "Low"
+            "level": "Medium"
           },
-          "ruleId": "acc-ReadableScreenNameNeeded",
-          "ruleIndex": 6
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen2.Container3.Label11.FocusedBorderThickness"
+                  "fullyQualifiedName": "'Reviwer Screen'.Container3.Label11.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen2.Container3.Label11.FocusedBorderThickness",
+                  "fullyQualifiedName": "'Reviwer Screen'.Container3.Label11.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
-                "module": "Screen2",
-                "type": "Screen2.Container3.Label11"
+                "module": "Reviwer Screen",
+                "type": "'Reviwer Screen'.Container3.Label11"
               }
             }
           ],
@@ -1663,19 +1664,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen2.Container3.Label11.TabIndex"
+                  "fullyQualifiedName": "'Reviwer Screen'.Container3.Label11.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen2.Container3.Label11.TabIndex",
+                  "fullyQualifiedName": "'Reviwer Screen'.Container3.Label11.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Screen2",
-                "type": "Screen2.Container3.Label11"
+                "module": "Reviwer Screen",
+                "type": "'Reviwer Screen'.Container3.Label11"
               }
             }
           ],
@@ -1693,19 +1694,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen2.Container3.Label11_1.FocusedBorderThickness"
+                  "fullyQualifiedName": "'Reviwer Screen'.Container3.Label11_1.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen2.Container3.Label11_1.FocusedBorderThickness",
+                  "fullyQualifiedName": "'Reviwer Screen'.Container3.Label11_1.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
-                "module": "Screen2",
-                "type": "Screen2.Container3.Label11_1"
+                "module": "Reviwer Screen",
+                "type": "'Reviwer Screen'.Container3.Label11_1"
               }
             }
           ],
@@ -1723,19 +1724,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen2.Container3.Label11_1.TabIndex"
+                  "fullyQualifiedName": "'Reviwer Screen'.Container3.Label11_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen2.Container3.Label11_1.TabIndex",
+                  "fullyQualifiedName": "'Reviwer Screen'.Container3.Label11_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Screen2",
-                "type": "Screen2.Container3.Label11_1"
+                "module": "Reviwer Screen",
+                "type": "'Reviwer Screen'.Container3.Label11_1"
               }
             }
           ],
@@ -1753,19 +1754,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen2.Container3.Label11_2.FocusedBorderThickness"
+                  "fullyQualifiedName": "'Reviwer Screen'.Container3.Label11_2.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen2.Container3.Label11_2.FocusedBorderThickness",
+                  "fullyQualifiedName": "'Reviwer Screen'.Container3.Label11_2.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
-                "module": "Screen2",
-                "type": "Screen2.Container3.Label11_2"
+                "module": "Reviwer Screen",
+                "type": "'Reviwer Screen'.Container3.Label11_2"
               }
             }
           ],
@@ -1783,19 +1784,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen2.Container3.Label11_2.TabIndex"
+                  "fullyQualifiedName": "'Reviwer Screen'.Container3.Label11_2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen2.Container3.Label11_2.TabIndex",
+                  "fullyQualifiedName": "'Reviwer Screen'.Container3.Label11_2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Screen2",
-                "type": "Screen2.Container3.Label11_2"
+                "module": "Reviwer Screen",
+                "type": "'Reviwer Screen'.Container3.Label11_2"
               }
             }
           ],
@@ -1813,19 +1814,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen2.Container4.DropdownCanvas1.AccessibleLabel"
+                  "fullyQualifiedName": "'Reviwer Screen'.Container4.DropdownCanvas1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen2.Container4.DropdownCanvas1.AccessibleLabel",
+                  "fullyQualifiedName": "'Reviwer Screen'.Container4.DropdownCanvas1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Screen2",
-                "type": "Screen2.Container4.DropdownCanvas1"
+                "module": "Reviwer Screen",
+                "type": "'Reviwer Screen'.Container4.DropdownCanvas1"
               }
             }
           ],
@@ -1843,19 +1844,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen2.Container4.DropdownCanvas1_1.AccessibleLabel"
+                  "fullyQualifiedName": "'Reviwer Screen'.Container4.DropdownCanvas1_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen2.Container4.DropdownCanvas1_1.AccessibleLabel",
+                  "fullyQualifiedName": "'Reviwer Screen'.Container4.DropdownCanvas1_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Screen2",
-                "type": "Screen2.Container4.DropdownCanvas1_1"
+                "module": "Reviwer Screen",
+                "type": "'Reviwer Screen'.Container4.DropdownCanvas1_1"
               }
             }
           ],
@@ -1873,19 +1874,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen2.Container4.Gallery5.AccessibleLabel"
+                  "fullyQualifiedName": "'Reviwer Screen'.Container4.Gallery5.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen2.Container4.Gallery5.AccessibleLabel",
+                  "fullyQualifiedName": "'Reviwer Screen'.Container4.Gallery5.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Screen2",
-                "type": "Screen2.Container4.Gallery5"
+                "module": "Reviwer Screen",
+                "type": "'Reviwer Screen'.Container4.Gallery5"
               }
             }
           ],
@@ -1903,19 +1904,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen2.Container4.Gallery5.TabIndex"
+                  "fullyQualifiedName": "'Reviwer Screen'.Container4.Gallery5.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen2.Container4.Gallery5.TabIndex",
+                  "fullyQualifiedName": "'Reviwer Screen'.Container4.Gallery5.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Screen2",
-                "type": "Screen2.Container4.Gallery5"
+                "module": "Reviwer Screen",
+                "type": "'Reviwer Screen'.Container4.Gallery5"
               }
             }
           ],
@@ -1933,19 +1934,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen2.Container4.Gallery5.CheckboxCanvas1.AccessibleLabel"
+                  "fullyQualifiedName": "'Reviwer Screen'.Container4.Gallery5.CheckboxCanvas1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen2.Container4.Gallery5.CheckboxCanvas1.AccessibleLabel",
+                  "fullyQualifiedName": "'Reviwer Screen'.Container4.Gallery5.CheckboxCanvas1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Screen2",
-                "type": "Screen2.Container4.Gallery5.CheckboxCanvas1"
+                "module": "Reviwer Screen",
+                "type": "'Reviwer Screen'.Container4.Gallery5.CheckboxCanvas1"
               }
             }
           ],
@@ -1963,19 +1964,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen2.Container4.Gallery2.AccessibleLabel"
+                  "fullyQualifiedName": "'Reviwer Screen'.Container4.Gallery2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen2.Container4.Gallery2.AccessibleLabel",
+                  "fullyQualifiedName": "'Reviwer Screen'.Container4.Gallery2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Screen2",
-                "type": "Screen2.Container4.Gallery2"
+                "module": "Reviwer Screen",
+                "type": "'Reviwer Screen'.Container4.Gallery2"
               }
             }
           ],
@@ -1993,19 +1994,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen2.Container4.Gallery2.TabIndex"
+                  "fullyQualifiedName": "'Reviwer Screen'.Container4.Gallery2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen2.Container4.Gallery2.TabIndex",
+                  "fullyQualifiedName": "'Reviwer Screen'.Container4.Gallery2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Screen2",
-                "type": "Screen2.Container4.Gallery2"
+                "module": "Reviwer Screen",
+                "type": "'Reviwer Screen'.Container4.Gallery2"
               }
             }
           ],
@@ -2023,19 +2024,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen2.Container4.ButtonCanvas1.AccessibleLabel"
+                  "fullyQualifiedName": "'Reviwer Screen'.Container4.ButtonCanvas1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen2.Container4.ButtonCanvas1.AccessibleLabel",
+                  "fullyQualifiedName": "'Reviwer Screen'.Container4.ButtonCanvas1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Screen2",
-                "type": "Screen2.Container4.ButtonCanvas1"
+                "module": "Reviwer Screen",
+                "type": "'Reviwer Screen'.Container4.ButtonCanvas1"
               }
             }
           ],
@@ -2053,19 +2054,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen2.Container5.DropdownCanvas10.AccessibleLabel"
+                  "fullyQualifiedName": "'Reviwer Screen'.Container5.DropdownCanvas10.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen2.Container5.DropdownCanvas10.AccessibleLabel",
+                  "fullyQualifiedName": "'Reviwer Screen'.Container5.DropdownCanvas10.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Screen2",
-                "type": "Screen2.Container5.DropdownCanvas10"
+                "module": "Reviwer Screen",
+                "type": "'Reviwer Screen'.Container5.DropdownCanvas10"
               }
             }
           ],
@@ -2736,6 +2737,36 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Reviwer Screen'.Container4.Gallery2.Label20.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Reviwer Screen'.Container4.Gallery2.Label20.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "Reviwer Screen",
+                "type": "'Reviwer Screen'.Container4.Gallery2.Label20"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 3
         },
         {
           "locations": [
