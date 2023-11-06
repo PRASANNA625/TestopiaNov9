@@ -1,15 +1,18 @@
 ReviewQuestionScreen As screen:
     Fill: =RGBA(247, 247, 247, 1)
     OnVisible: |
-        =ClearCollect(SelectedOptions, Filter(Var2, question_id = Value(SelectedQuestionID)))
+        =//ClearCollect(SelectedOptions, Filter(Var2, question_id = Value(SelectedQuestionID)))//
 
     Label21 As label:
         BorderThickness: =1
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =139
-        Text: |
-            =SelectedQuestion
-        Width: =929
+        Font: =Font.Arial
+        Height: =110
+        Size: =15
+        Text: |+
+            =SelectedButtonText
+            
+        Width: =920
         X: =114
         Y: =230
         ZIndex: =1
@@ -18,12 +21,13 @@ ReviewQuestionScreen As screen:
         FontWeight: =FontWeight.Bold
         Text: ="Question"
         Width: =116
-        X: =114
-        Y: =150
+        X: =480
+        Y: =136
         ZIndex: =2
 
     "Gallery4 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
         DelayItemLoading: =true
+        Height: =351
         Items: |
             =Filter(
                     'Exm.options',
@@ -33,8 +37,9 @@ ReviewQuestionScreen As screen:
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
         TemplateSize: =104
+        Width: =482
         X: =114
-        Y: =426
+        Y: =595
         ZIndex: =3
 
         Separator3 As rectangle:
@@ -51,4 +56,28 @@ ReviewQuestionScreen As screen:
             X: =196
             Y: =44
             ZIndex: =6
+
+    Image3 As image:
+        Height: =23
+        Image: =Question
+        Width: =96
+        X: =114
+        Y: =153
+        ZIndex: =4
+
+    Image5 As image:
+        Height: =29
+        Image: ='Line 11'
+        Width: =1813
+        X: =40
+        Y: =392
+        ZIndex: =5
+
+    Image10 As image:
+        Height: =23
+        Image: =Options
+        Width: =96
+        X: =114
+        Y: =456
+        ZIndex: =6
 
