@@ -428,7 +428,12 @@ Screen2_2 As screen:
                     ZIndex: =2
 
         Button2 As button:
-            OnSelect: =Navigate(Gallery2_2)
+            OnSelect: |-
+                =Set(Gal5,false);
+                Set(Gal3,false);
+                Set(Gal2,true);
+                Set(Cont4,true);
+                Set(Cont5,false);
             Text: ="Review Now"
             Visible: =Gal5
             Width: =243
