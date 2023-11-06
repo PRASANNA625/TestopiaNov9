@@ -41,21 +41,6 @@
     "OverridableProperties": {},
     "Version": "2.2.0"
   },
-  "Button": {
-    "CustomGroupControlTemplateName": "",
-    "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/powercontrol/PowerApps_CoreControls_ButtonCanvas",
-    "IsComponentTemplate": false,
-    "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": true,
-    "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": false,
-    "LastModifiedTimestamp": "0",
-    "Name": "PowerApps_CoreControls_ButtonCanvas",
-    "OverridableProperties": {},
-    "TemplateDisplayName": "Button",
-    "Version": "0.0.22"
-  },
   "checkbox": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
@@ -69,21 +54,6 @@
     "Name": "checkbox",
     "OverridableProperties": {},
     "Version": "2.1.0"
-  },
-  "Checkbox": {
-    "CustomGroupControlTemplateName": "",
-    "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/powercontrol/PowerApps_CoreControls_CheckboxCanvas",
-    "IsComponentTemplate": false,
-    "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": true,
-    "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": false,
-    "LastModifiedTimestamp": "0",
-    "Name": "PowerApps_CoreControls_CheckboxCanvas",
-    "OverridableProperties": {},
-    "TemplateDisplayName": "Checkbox",
-    "Version": "0.0.17"
   },
   "circle": {
     "CustomGroupControlTemplateName": "",
@@ -140,7 +110,7 @@
     "Name": "PowerApps_CoreControls_DropdownCanvas",
     "OverridableProperties": {},
     "TemplateDisplayName": "Dropdown",
-    "Version": "0.0.23"
+    "Version": "0.0.22"
   },
   "fluidGrid": {
     "CustomGroupControlTemplateName": "",
@@ -338,7 +308,7 @@
     "Name": "PowerApps_CoreControls_RadioGroupCanvas",
     "OverridableProperties": {},
     "TemplateDisplayName": "Radio",
-    "Version": "0.0.12"
+    "Version": "0.0.10"
   },
   "rectangle": {
     "CustomGroupControlTemplateName": "",
@@ -381,7 +351,7 @@
     "Name": "PowerApps_CoreControls_Slider",
     "OverridableProperties": {},
     "TemplateDisplayName": "Slider",
-    "Version": "1.0.12"
+    "Version": "1.0.11"
   },
   "TestCase": {
     "CustomGroupControlTemplateName": "",

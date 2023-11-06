@@ -51,6 +51,7 @@
       "enableruntimepolicies": false,
       "enablesaveloadcleardataonweb": false,
       "enableupdateifdelegation": false,
+      "enhancedgalleryinitialization": false,
       "errorhandling": true,
       "expandedsavedatasupport": true,
       "exportimportcomponents2": true,
@@ -96,7 +97,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 4,
+    "BindingErrorCount": 37,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 2000,
     "DocumentAppType": "DesktopOrTablet",

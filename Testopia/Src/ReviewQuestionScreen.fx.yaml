@@ -1,7 +1,7 @@
 ReviewQuestionScreen As screen:
     Fill: =RGBA(247, 247, 247, 1)
     OnVisible: |
-        =ClearCollect(SelectedOptions, Filter('Var2', question_id = Value(SelectedQuestionID)))
+        =ClearCollect(SelectedOptions, Filter(Var2, question_id = Value(SelectedQuestionID)))
 
     Label21 As label:
         BorderThickness: =1

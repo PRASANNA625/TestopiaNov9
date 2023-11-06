@@ -101,7 +101,6 @@
 
             RadioGroupCanvas2_1 As Radio.pcfdataset:
                 DisplayMode: =DisplayMode.Edit
-                FontSize: =0
                 Height: =46
                 Items: =["1"]
                 OnSelect: =
@@ -472,11 +471,9 @@
                 ZIndex: =6
 
             Slider2 As Slider:
-                BasePaletteColor: =RGBA(39, 113, 194, 1)
                 DisplayMode: =DisplayMode.Edit
                 Height: =35
                 Max: =10
-                Size: ='Slider.Size'.Medium
                 Value: =1
                 Width: =200
                 X: =646
