@@ -418,6 +418,15 @@ Screen2_2 As screen:
                     Y: =10
                     ZIndex: =1
 
+                Label11 As label:
+                    Align: =Align.Center
+                    Color: =RGBA(9, 33, 98, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Text: ="Review Now"
+                    X: =117
+                    Y: =146
+                    ZIndex: =2
+
         Button2 As button:
             Text: ="Review Now"
             Width: =243
