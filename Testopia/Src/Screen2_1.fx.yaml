@@ -187,6 +187,20 @@ Screen2_1 As screen:
                 
                 
                 
+            OnChange: |-
+                =ClearCollect(
+                    Var2,
+                     ShowColumns(
+                       Filter(
+                            'Exm.Question_details',
+                            technology_id = LookUp('Exm.Technology', technology = DropdownCanvas1_2.Selected.Value).technology_id
+                            && Level_of_quetions_id = LookUp('Exm.Level_of_quetions', level = DropdownCanvas1_3.Selected.Value).Level_of_quetions_id
+                        ),
+                        "question_id",  // Include all the columns you need
+                        "Level_of_quetions_id", // Include other columns you need
+                        "technology_id" // Include other columns you need
+                    )
+                );
             Width: =288
             X: =306
             Y: =126
@@ -334,6 +348,20 @@ Screen2_1 As screen:
                 
                 
                 
+            OnChange: |-
+                =ClearCollect(
+                    Var2,
+                     ShowColumns(
+                       Filter(
+                            'Exm.Question_details',
+                            technology_id = LookUp('Exm.Technology', technology = DropdownCanvas1_2.Selected.Value).technology_id
+                            && Level_of_quetions_id = LookUp('Exm.Level_of_quetions', level = DropdownCanvas1_3.Selected.Value).Level_of_quetions_id
+                        ),
+                        "question_id",  // Include all the columns you need
+                        "Level_of_quetions_id", // Include other columns you need
+                        "technology_id" // Include other columns you need
+                    )
+                );
             Width: =288
             X: =1348
             Y: =126
