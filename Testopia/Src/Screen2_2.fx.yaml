@@ -208,7 +208,7 @@ Screen2_2 As screen:
 
         "Gallery5_2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
             DelayItemLoading: =true
-            Height: =499
+            Height: =509
             Items: |
                 =//'Exm.Questions'//
                 
@@ -295,7 +295,7 @@ Screen2_2 As screen:
             TemplateSize: =253
             Visible: |
                 =Gal5
-            Width: =1904
+            Width: =1884
             WrapCount: =4
             Y: =225
             ZIndex: =6
@@ -429,7 +429,9 @@ Screen2_2 As screen:
 
         Button2 As button:
             OnSelect: |-
-                =Set(Gal5,false);
+                =Set(PreviousLabel, SelectedLabel);
+                Set(SelectedLabel, Label11_7);
+                Set(Gal5,false);
                 Set(Gal3,false);
                 Set(Gal2,true);
                 Set(Cont4,true);
