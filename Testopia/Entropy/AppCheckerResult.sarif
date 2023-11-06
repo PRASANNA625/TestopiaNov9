@@ -3540,17 +3540,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.vartab"
+                  "fullyQualifiedName": "App.varPageNumber"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.vartab",
+                  "fullyQualifiedName": "App.varPageNumber",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "vartab",
+                "member": "varPageNumber",
                 "module": "App",
                 "type": "App"
               }
@@ -3600,17 +3600,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.varPageNumber"
+                  "fullyQualifiedName": "App.vartab"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.varPageNumber",
+                  "fullyQualifiedName": "App.vartab",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "varPageNumber",
+                "member": "vartab",
                 "module": "App",
                 "type": "App"
               }
