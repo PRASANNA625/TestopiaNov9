@@ -198,7 +198,10 @@
                         ),
                         "question_id",  // Include all the columns you need
                         "Level_of_quetions_id", // Include other columns you need
-                        "technology_id" // Include other columns you need
+                        "technology_id",
+                        "answer_id",
+                        "options_id",
+                        "unit"// Include other columns you need
                     )
                 );
             Width: =288
@@ -375,7 +378,10 @@
                         ),
                         "question_id",  // Include all the columns you need
                         "Level_of_quetions_id", // Include other columns you need
-                        "technology_id" // Include other columns you need
+                        "technology_id",
+                        "answer_id",
+                        "options_id",
+                        "unit"// Include other columns you need
                     )
                 );
             Width: =288
@@ -424,6 +430,27 @@
                     Fill: =RGBA(255, 255, 255, 1)
                     OnSelect: |+
                         =Set(SelectedButtonText, ThisItem.RemovedCol);
+                        
+                            Collect(SelectedOptions1, { 
+                                SelectedCol: Label25.Text, 
+                                SelectedId: Label16.Text 
+                            });
+                        ClearCollect(
+                            VarOpt,
+                            ShowColumns(
+                                Filter(
+                                    Var2,
+                                    question_id in SelectedOptions1.SelectedId
+                                ),
+                                "options_id","answer_id"
+                            )
+                        );
+                        
+                        //ClearCollect(OptionsCollection, Filter('Exm.Options', options_id in VarOpt).options_id);//
+                        
+                        
+                        
+                        
                         Navigate(ReviewQuestionScreen, ScreenTransition.Cover)
                         
                     Text: ="Review Now"

@@ -1,7 +1,8 @@
 ReviewQuestionScreen As screen:
     Fill: =RGBA(247, 247, 247, 1)
-    OnVisible: |
+    OnVisible: |-
         =//ClearCollect(SelectedOptions, Filter(Var2, question_id = Value(SelectedQuestionID)))//
+        ClearCollect(OptionsCollection, Filter('Exm.Options', options_id in VarOpt).options_id);
 
     Label21 As label:
         BorderThickness: =1
@@ -24,38 +25,6 @@ ReviewQuestionScreen As screen:
         X: =480
         Y: =136
         ZIndex: =2
-
-    "Gallery4 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
-        DelayItemLoading: =true
-        Height: =351
-        Items: |
-            =Filter(
-                    'Exm.options',
-                    options_id in ShowColumns(SelectedOptions, "options_id"))
-                
-        Layout: =Layout.Vertical
-        LoadingSpinner: =LoadingSpinner.Data
-        TemplatePadding: =0
-        TemplateSize: =104
-        Width: =482
-        X: =114
-        Y: =595
-        ZIndex: =3
-
-        Separator3 As rectangle:
-            Fill: =RGBA(255, 255, 255, 1)
-            Height: =8
-            OnSelect: =Select(Parent)
-            Width: =Parent.TemplateWidth
-            Y: =Parent.TemplateHeight - Self.Height
-            ZIndex: =5
-
-        Label28 As label:
-            OnSelect: =Select(Parent)
-            Text: =ThisItem.options_id
-            X: =196
-            Y: =44
-            ZIndex: =6
 
     Image3 As image:
         Height: =23
@@ -80,4 +49,12 @@ ReviewQuestionScreen As screen:
         X: =114
         Y: =456
         ZIndex: =6
+
+    Radio3 As radio:
+        Height: =206
+        Items: =Filter('Exm.Options', options_id in VarOpt.options_id)
+        Width: =410
+        X: =114
+        Y: =573
+        ZIndex: =7
 
