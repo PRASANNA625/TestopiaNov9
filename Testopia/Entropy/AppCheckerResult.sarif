@@ -3810,17 +3810,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.Vector"
+                  "fullyQualifiedName": "App.thumbs-up"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.Vector",
+                  "fullyQualifiedName": "App.thumbs-up",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "Vector",
+                "member": "thumbs-up",
                 "module": "App",
                 "type": "App"
               }
