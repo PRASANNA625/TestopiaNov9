@@ -428,6 +428,8 @@ Screen2_2 As screen:
                     ZIndex: =2
 
         Button2 As button:
+            Font: =Font.Arial
+            Height: =46
             OnSelect: |-
                 =Set(PreviousLabel, SelectedLabel);
                 Set(SelectedLabel, Label11_7);
@@ -436,11 +438,16 @@ Screen2_2 As screen:
                 Set(Gal2,true);
                 Set(Cont4,true);
                 Set(Cont5,false);
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =21
             Text: ="Review Now"
             Visible: =Gal5
-            Width: =243
-            X: =776
-            Y: =876
+            Width: =279
+            X: =740
+            Y: =870
             ZIndex: =9
 
     Container5_2 As groupContainer.manualLayoutContainer:

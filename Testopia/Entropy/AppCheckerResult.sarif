@@ -3780,17 +3780,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.Vector (1)"
+                  "fullyQualifiedName": "App.thumbs-up"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.Vector (1)",
+                  "fullyQualifiedName": "App.thumbs-up",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "Vector (1)",
+                "member": "thumbs-up",
                 "module": "App",
                 "type": "App"
               }
@@ -3810,17 +3810,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.Vector"
+                  "fullyQualifiedName": "App.Vector (1)"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.Vector",
+                  "fullyQualifiedName": "App.Vector (1)",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "Vector",
+                "member": "Vector (1)",
                 "module": "App",
                 "type": "App"
               }
