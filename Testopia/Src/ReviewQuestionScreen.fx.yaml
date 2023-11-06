@@ -27,6 +27,7 @@ ReviewQuestionScreen As screen:
 
     "Gallery4 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
         DelayItemLoading: =true
+        Height: =351
         Items: |
             =Filter(
                     'Exm.options',
@@ -36,8 +37,9 @@ ReviewQuestionScreen As screen:
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
         TemplateSize: =104
+        Width: =482
         X: =114
-        Y: =499
+        Y: =595
         ZIndex: =3
 
         Separator3 As rectangle:
@@ -64,10 +66,18 @@ ReviewQuestionScreen As screen:
         ZIndex: =4
 
     Image5 As image:
-        Height: =23
+        Height: =29
         Image: ='Line 11'
-        Width: =1760
-        X: =126
-        Y: =399
+        Width: =1813
+        X: =40
+        Y: =392
         ZIndex: =5
+
+    Image10 As image:
+        Height: =23
+        Image: =Options
+        Width: =96
+        X: =114
+        Y: =456
+        ZIndex: =6
 

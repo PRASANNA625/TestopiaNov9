@@ -431,6 +431,12 @@
                     Y: =146
                     ZIndex: =2
 
+                Label16 As label:
+                    Text: =ThisItem.RemovedId
+                    Visible: =false
+                    Y: =10
+                    ZIndex: =3
+
         Button2 As button:
             Font: =Font.Arial
             Height: =66
