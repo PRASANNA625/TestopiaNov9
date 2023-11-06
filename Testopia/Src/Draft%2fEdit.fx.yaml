@@ -1,4 +1,4 @@
-"'Contributor Draft/Edit' As screen":
+"'Draft/Edit' As screen":
     Fill: =RGBA(247, 247, 247, 1)
     OnVisible: |-
         = Set(varPageNumber,1);
