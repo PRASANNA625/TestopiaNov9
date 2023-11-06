@@ -6,11 +6,13 @@ ReviewQuestionScreen As screen:
     Label21 As label:
         BorderThickness: =1
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =139
+        Font: =Font.Arial
+        Height: =110
+        Size: =15
         Text: |+
             =SelectedButtonText
             
-        Width: =929
+        Width: =920
         X: =114
         Y: =230
         ZIndex: =1
@@ -19,8 +21,8 @@ ReviewQuestionScreen As screen:
         FontWeight: =FontWeight.Bold
         Text: ="Question"
         Width: =116
-        X: =114
-        Y: =150
+        X: =480
+        Y: =136
         ZIndex: =2
 
     "Gallery4 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
@@ -35,7 +37,7 @@ ReviewQuestionScreen As screen:
         TemplatePadding: =0
         TemplateSize: =104
         X: =114
-        Y: =426
+        Y: =499
         ZIndex: =3
 
         Separator3 As rectangle:
@@ -52,4 +54,20 @@ ReviewQuestionScreen As screen:
             X: =196
             Y: =44
             ZIndex: =6
+
+    Image3 As image:
+        Height: =23
+        Image: =Question
+        Width: =96
+        X: =114
+        Y: =153
+        ZIndex: =4
+
+    Image5 As image:
+        Height: =23
+        Image: ='Line 11'
+        Width: =1760
+        X: =126
+        Y: =399
+        ZIndex: =5
 
