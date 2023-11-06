@@ -429,7 +429,7 @@ Screen2_2 As screen:
 
         Button2 As button:
             Font: =Font.Arial
-            Height: =46
+            Height: =66
             OnSelect: |-
                 =Set(PreviousLabel, SelectedLabel);
                 Set(SelectedLabel, Label11_7);
@@ -447,7 +447,7 @@ Screen2_2 As screen:
             Visible: =Gal5
             Width: =279
             X: =740
-            Y: =870
+            Y: =850
             ZIndex: =9
 
     Container5_2 As groupContainer.manualLayoutContainer:
