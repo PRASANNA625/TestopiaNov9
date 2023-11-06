@@ -1,4 +1,4 @@
-Screen2_2 As screen:
+"'New Reviewer Screen' As screen":
     Fill: =RGBA(242, 246, 247, 1)
     OnVisible: |+
         =//ClearCollect(MatchingQuestionsCollection,'Exm.Question_details')//
@@ -422,6 +422,10 @@ Screen2_2 As screen:
                     Align: =Align.Center
                     Color: =RGBA(9, 33, 98, 1)
                     Fill: =RGBA(255, 255, 255, 1)
+                    OnSelect: |+
+                        =Set(SelectedButtonText, ThisItem.RemovedCol);
+                        Navigate(ReviewQuestionScreen, ScreenTransition.Cover)
+                        
                     Text: ="Review Now"
                     X: =117
                     Y: =146
