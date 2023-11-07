@@ -28,7 +28,7 @@ Screen2_1 As screen:
             )
         );*/
         
-        /*ClearCollect(
+        ClearCollect(
             MatchingQuestionsCollection,
             Distinct(
                 Filter(
@@ -38,7 +38,7 @@ Screen2_1 As screen:
                 ),
                 question_id
             )
-        )*/
+        )
         ClearCollect(
             Var1,
             Filter(
