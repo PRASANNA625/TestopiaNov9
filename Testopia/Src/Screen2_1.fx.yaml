@@ -467,6 +467,10 @@ Screen2_1 As screen:
                                 "answer_id","question_id"
                             )
                         );
+                        Set(VarB, CountRows(Filter('Exm.Options', options_id in VarOpt.options_id)) > 0);
+                        
+                        
+                        
                         
                         Navigate(ReviewQuestionScreen, ScreenTransition.Cover)
                         

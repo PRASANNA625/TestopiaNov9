@@ -51,6 +51,8 @@ ReviewQuestionScreen As screen:
         ZIndex: =6
 
     Radio3 As radio:
+        Default: |
+            =VarB
         Height: =206
         Items: =Filter('Exm.Options', options_id in VarOpt.options_id)
         Width: =410
