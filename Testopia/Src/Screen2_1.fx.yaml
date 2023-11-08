@@ -346,8 +346,9 @@ Screen2_1 As screen:
                     ZIndex: =1
 
                 Checkbox2 As checkbox:
+                    Height: =24
                     Text: =""
-                    Width: =35
+                    Width: =24
                     X: =52
                     Y: =111
                     ZIndex: =2
