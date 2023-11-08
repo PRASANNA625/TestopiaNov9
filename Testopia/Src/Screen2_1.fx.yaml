@@ -66,7 +66,7 @@ Screen2_1 As screen:
     Container3_1 As groupContainer.manualLayoutContainer:
         Fill: =RGBA(214, 221, 224, 1)
         Height: =59
-        Width: =763
+        Width: =699
         X: =510
         Y: =56
         ZIndex: =1
@@ -76,10 +76,11 @@ Screen2_1 As screen:
             Color: =If(SelectedLabel = Label11_3, Color.White, Color.Black)
             Fill: |
                 =//If(SelectedLabel = Label11, Blue, Gray),//
-                If(SelectedLabel = Label11_3, RGBA(58,78,178,1), Color.LightGray)
+                If(SelectedLabel = Label11_3, RGBA(56,96,178,1), Color.LightGray)
                 
                 //Color: If(SelectedLabel = Label1, White, Black)//
             Font: =Font.Arial
+            FontWeight: =FontWeight.Semibold
             Height: =59
             OnSelect: |+
                 =
@@ -99,17 +100,18 @@ Screen2_1 As screen:
                 Set(Cont5,false);
                 
                 
-            Size: =21
+            Size: =20
             Text: ="All Questions (8)"
-            Width: =247
+            Width: =243
             ZIndex: =1
 
         Label11_4 As label:
             Align: =Align.Center
             Color: =If(SelectedLabel = Label11_4, Color.White, Color.Black)
-            Fill: =If(SelectedLabel = Label11_4, Color.Blue, Color.LightGray)
+            Fill: =If(SelectedLabel = Label11_4,RGBA(56,96,178,1), Color.LightGray)
             Font: =Font.Arial
-            Height: =59
+            FontWeight: =FontWeight.Semibold
+            Height: =60
             OnSelect: |-
                 =Set(PreviousLabel, SelectedLabel);
                 Set(SelectedLabel, Label11_4);
@@ -118,17 +120,18 @@ Screen2_1 As screen:
                 Set(Gal2,true);
                 Set(Cont4,true);
                 Set(Cont5,false);
-            Size: =21
+            Size: =20
             Text: ="Review"
-            Width: =247
-            X: =247
+            Width: =220
+            X: =220
             ZIndex: =2
 
         Label11_5 As label:
             Align: =Align.Center
             Color: =If(SelectedLabel = Label11_5, Color.White, Color.Black)
-            Fill: =If(SelectedLabel = Label11_5, Color.Blue, Color.LightGray)
+            Fill: =If(SelectedLabel = Label11_5, RGBA(56,96,178,1), Color.LightGray)
             Font: =Font.Arial
+            FontWeight: =FontWeight.Semibold
             Height: =59
             OnSelect: |+
                 =Set(PreviousLabel, SelectedLabel);
@@ -139,10 +142,10 @@ Screen2_1 As screen:
                 Set(Cont5,true);
                 Set(Gal3,true);
                 
-            Size: =21
+            Size: =20
             Text: ="Approved/Rejected"
-            Width: =267
-            X: =494
+            Width: =253
+            X: =440
             ZIndex: =3
 
     Container4_1 As groupContainer.manualLayoutContainer:
