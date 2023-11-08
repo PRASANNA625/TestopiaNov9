@@ -68,7 +68,7 @@ ReviewQuestionScreen As screen:
         Items: =Filter('Exm.Options', options_id in VarOpt.options_id)
         OnSelect: |
             =//Set(Radio3DefaultValue, LookUp('Exm.Options', options = Radio3.Selected.options).options)//
-            Set(Radio3DefaultValue, LookUp('Exm.Options', options_id in VarOpt.options_id).options)
+            //Set(Radio3DefaultValue, LookUp('Exm.Options', options_id in VarOpt.options_id).options)//
         Width: =410
         X: =114
         Y: =573
