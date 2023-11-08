@@ -190,7 +190,7 @@ Screen2_1 As screen:
                         ),
                         "question_id",  // Include all the columns you need
                         "Level_of_quetions_id", // Include other columns you need
-                        "technology_id","answer_id","unit" // Include other columns you need
+                        "technology_id","answer_id","options_id","question_details_id","unit" // Include other columns you need
                     )
                 );
             Width: =288
@@ -397,7 +397,7 @@ Screen2_1 As screen:
                         ),
                         "question_id",  // Include all the columns you need
                         "Level_of_quetions_id", // Include other columns you need
-                        "technology_id" // Include other columns you need
+                        "technology_id","answer_id","options_id","question_details_id","unit" // Include other columns you need
                     )
                 );
             Width: =288
@@ -464,7 +464,7 @@ Screen2_1 As screen:
                                     question_id in SelectedOptions1.SelectedId
                                 ),
                                 "options_id",
-                                "answer_id"
+                                "answer_id","question_id"
                             )
                         );
                         
