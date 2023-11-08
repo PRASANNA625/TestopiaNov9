@@ -13,7 +13,9 @@ Screen1 As screen:
         Default: =""
         Fill: =RGBA(247, 247, 247, 1)
         Height: =93
-        HintText: ="Type Here......"
+        HintText: |-
+            ="                             
+                       Type Here......"
         Width: =516
         X: =662
         Y: =447
