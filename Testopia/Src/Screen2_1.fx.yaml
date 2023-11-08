@@ -464,6 +464,10 @@ Screen2_1 As screen:
                     Color: =RGBA(56, 96, 178, 1)
                     Font: =Font.Arial
                     Height: =18
+                    OnSelect: |+
+                        =Set(SelectedButtonText, ThisItem.RemovedCol);
+                        Navigate(ReviewQuestionScreen, ScreenTransition.Cover)
+                        
                     Size: =14
                     Text: ="Review Now"
                     Width: =124
