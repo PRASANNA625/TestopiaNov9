@@ -49,11 +49,15 @@ ReviewQuestionScreen As screen:
                 Radio3.Selected = true,
                 Radio3.Selected = false
             )*/
-            If(
+            /*If(
                 !IsBlank(LookUp(VarOpt, options_id = options_id)),
                 true,
                 false
-            )
+            )*/
+            Radio3DefaultValue 
+            
+            
+            
             
             
             
@@ -62,6 +66,9 @@ ReviewQuestionScreen As screen:
             
         Height: =206
         Items: =Filter('Exm.Options', options_id in VarOpt.options_id)
+        OnSelect: |
+            =//Set(Radio3DefaultValue, LookUp('Exm.Options', options = Radio3.Selected.options).options)//
+            Set(Radio3DefaultValue, LookUp('Exm.Options', options_id in VarOpt.options_id).options)
         Width: =410
         X: =114
         Y: =573
