@@ -164,3 +164,23 @@ ReviewQuestionScreen As screen:
         Y: =756
         ZIndex: =19
 
+    Label21_1 As label:
+        BorderThickness: =1
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =Font.Arial
+        Height: =110
+        Size: =15
+        Text: |+
+            =//SelectedButtonText//
+            
+        Width: =920
+        X: =114
+        Y: =822
+        ZIndex: =20
+
+    Image21 As image:
+        Image: =User.
+        X: =1516
+        Y: =100
+        ZIndex: =21
+

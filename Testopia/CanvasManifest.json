@@ -96,7 +96,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 40,
+    "BindingErrorCount": 42,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 2000,
     "DocumentAppType": "DesktopOrTablet",
@@ -115,7 +115,7 @@
     "ManualOfflineProfileId": "",
     "Name": "ArusInterview - copy",
     "OriginatingVersion": "1.330",
-    "ParserErrorCount": 0,
+    "ParserErrorCount": 1,
     "ShowStatusBar": true
   },
   "PublishInfo": {
@@ -143,6 +143,7 @@
     "New Reviewer Screen",
     "Contributor",
     "Draft/Edit",
-    "ReviewQuestionScreen"
+    "ReviewQuestionScreen",
+    "Screen1"
   ]
 }
