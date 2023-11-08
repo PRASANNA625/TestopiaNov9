@@ -374,6 +374,7 @@ Screen2_1 As screen:
                 Label14 As label:
                     Height: =32
                     Text: =ThisItem.questions_id
+                    Visible: =false
                     Width: =74
                     X: =282
                     Y: =22
