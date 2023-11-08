@@ -164,3 +164,48 @@ ReviewQuestionScreen As screen:
         Y: =756
         ZIndex: =19
 
+    Label21_1 As label:
+        BorderThickness: =1
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =Font.Arial
+        Height: =110
+        Size: =15
+        Text: |+
+            =SelectedButtonText
+            
+        Width: =920
+        X: =96
+        Y: =830
+        ZIndex: =20
+
+    Button2 As button:
+        Font: =Font.Arial
+        Height: =55
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =17
+        Text: ="Approve"
+        Width: =199
+        X: =569
+        Y: =1013
+        ZIndex: =21
+
+    Button2_1 As button:
+        BorderThickness: =3
+        Color: =RGBA(0, 0, 0, 1)
+        Fill: =RGBA(247, 247, 247, 1)
+        Font: =Font.Arial
+        Height: =55
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =17
+        Text: ="Reject"
+        Width: =199
+        X: =810
+        Y: =1013
+        ZIndex: =22
+
