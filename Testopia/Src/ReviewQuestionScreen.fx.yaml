@@ -74,3 +74,34 @@ ReviewQuestionScreen As screen:
         Y: =573
         ZIndex: =7
 
+    Image9 As image:
+        Height: =215
+        Image: ='Line 15'
+        Width: =152
+        X: =644
+        Y: =479
+        ZIndex: =8
+
+    Image11 As image:
+        Height: =97
+        Image: ='Mark given by the Contributor'
+        Width: =277
+        X: =775
+        Y: =425
+        ZIndex: =9
+
+    Image12 As image:
+        Image: ='Group 431'
+        Width: =277
+        X: =775
+        Y: =534
+        ZIndex: =10
+
+    Image9_1 As image:
+        Height: =215
+        Image: ='Line 15'
+        Width: =152
+        X: =1052
+        Y: =479
+        ZIndex: =11
+
