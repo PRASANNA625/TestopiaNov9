@@ -454,7 +454,6 @@ Screen2_1 As screen:
                     Color: =RGBA(75, 75, 75, 1)
                     Font: =Font.Arial
                     Height: =94
-                    Size: =16
                     Text: =ThisItem.RemovedCol
                     Width: =302
                     X: =36
