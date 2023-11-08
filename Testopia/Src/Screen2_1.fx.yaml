@@ -29,17 +29,6 @@ Screen2_1 As screen:
         );*/
         
         ClearCollect(
-            MatchingQuestionsCollection,
-            Distinct(
-                Filter(
-                    'Exm.Question_details',
-                    technology_id = LookUp('Exm.Technology', technology = DropdownCanvas1.Selected.Value).technology_id
-                        && Level_of_quetions_id = LookUp('Exm.Level_of_quetions', level = DropdownCanvas1_1.Selected.Value).Level_of_quetions_id
-                ),
-                question_id
-            )
-        )
-        ClearCollect(
             Var1,
             Filter(
                 'Exm.Question_details',
@@ -201,7 +190,7 @@ Screen2_1 As screen:
                         ),
                         "question_id",  // Include all the columns you need
                         "Level_of_quetions_id", // Include other columns you need
-                        "technology_id" // Include other columns you need
+                        "technology_id","answer_id","unit" // Include other columns you need
                     )
                 );
             Width: =288
@@ -432,7 +421,7 @@ Screen2_1 As screen:
             ZIndex: =8
 
             Rectangle1_1 As rectangle:
-                Height: =Parent.TemplateHeight - Separator1_1.Height
+                Height: =//Parent.TemplateHeight - Separator1_1.Height//
                 OnSelect: =Select(Parent)
                 Visible: =ThisItem.IsSelected
                 Width: =4
@@ -466,6 +455,19 @@ Screen2_1 As screen:
                     Height: =18
                     OnSelect: |+
                         =Set(SelectedButtonText, ThisItem.RemovedCol);
+                        Collect(SelectedOptions1,{SelectedCol: Label15.Text, SelectedId: Label17.Text});
+                        ClearCollect(
+                            VarOpt,
+                            ShowColumns(
+                                Filter(
+                                    Var2,
+                                    question_id in SelectedOptions1.SelectedId
+                                ),
+                                "options_id",
+                                "answer_id"
+                            )
+                        );
+                        
                         Navigate(ReviewQuestionScreen, ScreenTransition.Cover)
                         
                     Size: =14
@@ -474,6 +476,15 @@ Screen2_1 As screen:
                     X: =87
                     Y: =154
                     ZIndex: =2
+
+                Label17 As label:
+                    Height: =25
+                    Text: =ThisItem.RemovedId
+                    Visible: =false
+                    Width: =72
+                    X: =288
+                    Y: =10
+                    ZIndex: =3
 
     Container5_1 As groupContainer.manualLayoutContainer:
         Height: =934
