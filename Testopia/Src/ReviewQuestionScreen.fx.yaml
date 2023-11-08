@@ -49,7 +49,12 @@ ReviewQuestionScreen As screen:
                 Radio3.Selected = true,
                 Radio3.Selected = false
             )*/
-            !IsBlank(LookUp(VarOpt, options_id = options_id))
+            If(
+                !IsBlank(LookUp(VarOpt, options_id = options_id)),
+                true,
+                false
+            )
+            
             
             
             
