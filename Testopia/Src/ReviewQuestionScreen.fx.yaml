@@ -111,3 +111,11 @@ ReviewQuestionScreen As screen:
         Y: =427
         ZIndex: =12
 
+    Image14 As image:
+        Height: =72
+        Image: ='Vector 8'
+        Width: =72
+        X: =1339
+        Y: =473
+        ZIndex: =13
+

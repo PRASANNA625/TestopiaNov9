@@ -88,6 +88,7 @@
     "Image11": 211,
     "Image12": 212,
     "Image13": 214,
+    "Image14": 215,
     "Image2": 141,
     "Image3": 157,
     "Image4": 88,
@@ -220,7 +221,7 @@
   "DoesTestStepsMetadataExist": true,
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "11/08/2023 11:39:23",
+  "HeaderLastSavedDateTimeUTC": "11/08/2023 11:40:25",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "0492e0fc-83f0-4bdc-9842-c9f7647ca527": "\"/providers/microsoft.powerapps/apis/shared_teams/connections/895f5086cd3444aeb03619ca93d75684\"",
@@ -260,6 +261,7 @@
     "thumbs-up": "0021.png",
     "Vector": "0023.png",
     "Vector (1)": "0022.png",
+    "Vector 8": "e29b272f-cac9-460c-84ec-a11db4114819.png",
     "Vector_1": "0024.png"
   },
   "LocalResourceRootPaths": {
@@ -290,6 +292,7 @@
     "thumbs-up": "https://docserverpwaprodsin.blob.core.windows.net/e0a3d04f-ce3e-4062-a46a-255a347fcf4d-1/resource/Assets0Images00021.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2023-11-08T11%3A29%3A21Z&ske=2023-11-09T11%3A44%3A21Z&sks=b&skv=2021-12-02&sv=2021-12-02&spr=https&se=2023-11-09T11%3A44%3A21Z&sr=b&sp=r&sig=9IOHYmNi5myBokDp1lLtMh736wHQpLEMrFPx%2Fq5Ug80%3D",
     "Vector": "https://docserverpwaprodsin.blob.core.windows.net/e0a3d04f-ce3e-4062-a46a-255a347fcf4d-1/resource/Assets0Images00023.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2023-11-08T11%3A29%3A21Z&ske=2023-11-09T11%3A44%3A21Z&sks=b&skv=2021-12-02&sv=2021-12-02&spr=https&se=2023-11-09T11%3A44%3A21Z&sr=b&sp=r&sig=hC0RLyY2I%2FEvs652kML5xIwGI6InQkYjOF2wIx2R8XA%3D",
     "Vector (1)": "https://docserverpwaprodsin.blob.core.windows.net/e0a3d04f-ce3e-4062-a46a-255a347fcf4d-1/resource/Assets0Images00022.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2023-11-08T11%3A29%3A21Z&ske=2023-11-09T11%3A44%3A21Z&sks=b&skv=2021-12-02&sv=2021-12-02&spr=https&se=2023-11-09T11%3A44%3A21Z&sr=b&sp=r&sig=huQnWkZKAuuneqbLXjDBvZsntfwnSb%2F%2BJzf7cbsWIdM%3D",
+    "Vector 8": "https://docserverpwaprodsin.blob.core.windows.net/e0a3d04f-ce3e-4062-a46a-255a347fcf4d-1/resource/a103862f-bc4b-4587-8c2e-f55a82d917fc.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2023-11-08T11%3A39%3A54Z&ske=2023-11-09T11%3A54%3A54Z&sks=b&skv=2021-12-02&sv=2021-12-02&spr=https&se=2023-11-09T11%3A54%3A54Z&sr=b&sp=r&sig=82UTc8r0h43qqPwkS4lmqI49UZRYG3fk0ofOCMg6fBA%3D",
     "Vector_1": "https://docserverpwaprodsin.blob.core.windows.net/e0a3d04f-ce3e-4062-a46a-255a347fcf4d-1/resource/Assets0Images00024.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2023-11-08T11%3A29%3A21Z&ske=2023-11-09T11%3A44%3A21Z&sks=b&skv=2021-12-02&sv=2021-12-02&spr=https&se=2023-11-09T11%3A44%3A21Z&sr=b&sp=r&sig=0%2BUyQLKpRi9J9dYEWeMFWPH%2FSj2KNhHYwA0cHjdq1Qw%3D"
   },
   "OrderComponentMetadata": {},
@@ -445,6 +448,7 @@
     "Image11": {},
     "Image12": {},
     "Image13": {},
+    "Image14": {},
     "Image2": {},
     "Image3": {},
     "Image4": {},
@@ -762,6 +766,7 @@
     "Image11": 0,
     "Image12": 0,
     "Image13": 0,
+    "Image14": 0,
     "Image2": 0,
     "Image3": 185,
     "Image4": 34,
@@ -920,6 +925,7 @@
     "Image-thumbs-up": 22,
     "Image-Vector": 24,
     "Image-Vector (1)": 23,
+    "Image-Vector 8": 30,
     "Image-Vector_1": 25,
     "Video-SampleVideo": 1
   },
