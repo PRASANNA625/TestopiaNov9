@@ -119,3 +119,40 @@ ReviewQuestionScreen As screen:
         Y: =473
         ZIndex: =13
 
+    Image15 As image:
+        Height: =50
+        Image: ='Vector 10'
+        Width: =17
+        X: =1425
+        Y: =482
+        ZIndex: =14
+
+    Image16 As image:
+        Image: ='Vector 9'
+        Width: =45.5
+        X: =1395
+        Y: =456
+        ZIndex: =15
+
+    Image18 As image:
+        Height: =23
+        Image: =Category
+        Width: =90
+        X: =1480
+        Y: =479
+        ZIndex: =16
+
+    Image19 As image:
+        Image: ='Line 11'
+        X: =40
+        Y: =652
+        ZIndex: =17
+
+    Image5_1 As image:
+        Height: =29
+        Image: ='Line 11'
+        Width: =1813
+        X: =28
+        Y: =706
+        ZIndex: =18
+
