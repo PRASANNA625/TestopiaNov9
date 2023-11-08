@@ -298,8 +298,9 @@ Screen2_1 As screen:
             TemplateSize: =203
             Visible: |
                 =Gal5
-            Width: =1904
+            Width: =1864
             WrapCount: =4
+            X: =40
             Y: =280
             ZIndex: =6
 
@@ -349,6 +350,10 @@ Screen2_1 As screen:
                          If(Checkbox2.Value = true, RGBA(0,128,0,255), RGBA(0, 0, 0, 0))
                     Font: =Font.Arial
                     Height: =28
+                    OnCheck: |
+                        =
+                    OnSelect: |-
+                        =If(Checkbox2.Value = true, Collect(RemovedText, { RemovedCol: Label11.Text , RemovedId: Label14.Text }))
                     Text: =""
                     VerticalAlign: =VerticalAlign.Top
                     Width: =28
@@ -365,6 +370,14 @@ Screen2_1 As screen:
                     X: =87
                     Y: =121
                     ZIndex: =3
+
+                Label14 As label:
+                    Height: =32
+                    Text: =ThisItem.questions_id
+                    Width: =74
+                    X: =282
+                    Y: =22
+                    ZIndex: =4
 
         DropdownCanvas1_3 As Dropdown.pcfdataset:
             DefaultSelectedItems: =["Select the level"]
