@@ -37,7 +37,7 @@ ReviewQuestionScreen As screen:
     Image10 As image:
         Height: =23
         Image: =Options
-        Width: =96
+        Width: =78
         X: =114
         Y: =456
         ZIndex: =6
@@ -155,4 +155,12 @@ ReviewQuestionScreen As screen:
         X: =28
         Y: =706
         ZIndex: =18
+
+    Image20 As image:
+        Height: =23
+        Image: ='Reason for the Question & answer'
+        Width: =340
+        X: =96
+        Y: =756
+        ZIndex: =19
 
