@@ -349,8 +349,8 @@ Screen2_1 As screen:
                     Height: =24
                     Text: =""
                     Width: =24
-                    X: =52
-                    Y: =111
+                    X: =49
+                    Y: =129
                     ZIndex: =2
 
                 Label13 As label:
