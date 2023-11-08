@@ -105,3 +105,9 @@ ReviewQuestionScreen As screen:
         Y: =479
         ZIndex: =11
 
+    Image13 As image:
+        Image: =Technology
+        X: =1227
+        Y: =427
+        ZIndex: =12
+
