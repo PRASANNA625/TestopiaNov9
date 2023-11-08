@@ -18,14 +18,6 @@ ReviewQuestionScreen As screen:
         Y: =230
         ZIndex: =1
 
-    Label24 As label:
-        FontWeight: =FontWeight.Bold
-        Text: ="Question"
-        Width: =116
-        X: =480
-        Y: =136
-        ZIndex: =2
-
     Image3 As image:
         Height: =23
         Image: =Question
@@ -51,8 +43,18 @@ ReviewQuestionScreen As screen:
         ZIndex: =6
 
     Radio3 As radio:
-        Default: |
-            =VarB
+        Default: |+
+            =/*If(
+                !IsBlank(LookUp(VarOpt, options_id = options_id)),
+                Radio3.Selected = true,
+                Radio3.Selected = false
+            )*/
+            !IsBlank(LookUp(VarOpt, options_id = options_id))
+            
+            
+            
+            
+            
         Height: =206
         Items: =Filter('Exm.Options', options_id in VarOpt.options_id)
         Width: =410
