@@ -339,6 +339,9 @@ Screen2_1 As screen:
                     ZIndex: =1
 
                 Checkbox2 As checkbox:
+                    Fill: |-
+                        =//RGBA(0, 0, 0, 0)//
+                         If(Checkbox2.Value = true, RGBA(75,75,75,1), RGBA(0, 0, 0, 0))
                     Height: =24
                     Text: =""
                     Width: =24
