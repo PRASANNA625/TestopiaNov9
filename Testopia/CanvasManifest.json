@@ -111,7 +111,7 @@
     "FileID": "8b5c11e4-77a0-4212-9268-30e2838ec9ae",
     "Id": "8b5c11e4-77a0-4212-9268-30e2838ec9ae",
     "InstrumentationKey": "",
-    "LocalDatabaseReferences": "",
+    "LocalDatabaseReferences": "{}",
     "ManualOfflineProfileId": "",
     "Name": "App",
     "OriginatingVersion": "1.335",

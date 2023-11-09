@@ -64,18 +64,8 @@
           "RuleProviderType": "Unknown"
         },
         {
-          "Category": "Behavior",
-          "PropertyName": "OnStart",
-          "RuleProviderType": "User"
-        },
-        {
           "Category": "ConstantData",
           "PropertyName": "SizeBreakpoints",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "OnDemandData",
-          "PropertyName": "StartScreen",
           "RuleProviderType": "Unknown"
         }
       ],
