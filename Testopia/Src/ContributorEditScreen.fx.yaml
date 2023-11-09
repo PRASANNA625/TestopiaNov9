@@ -63,3 +63,11 @@ ContributorEditScreen As screen:
         Y: =347
         ZIndex: =6
 
+    Arrow1_1 As arrow.backArrow:
+        Height: =35
+        OnSelect: =Back()
+        Width: =35
+        X: =10
+        Y: =10
+        ZIndex: =7
+

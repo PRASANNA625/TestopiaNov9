@@ -65,6 +65,7 @@ Role As screen:
             Height: =88
             HoverFill: |
                 =RGBA(56, 96, 178, 1)
+            OnSelect: =Navigate(Screen2_1)
             PressedFill: =RGBA(56, 96, 178, 1)
             Text: ="Reviewer"
             Width: =319
