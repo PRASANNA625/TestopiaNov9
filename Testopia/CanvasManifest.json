@@ -96,7 +96,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 37,
+    "BindingErrorCount": 21,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 2000,
     "DocumentAppType": "DesktopOrTablet",
@@ -139,6 +139,7 @@
     "Role",
     "Reviwer Screen",
     "Screen2_1",
+    "Screen2_2",
     "New Reviewer Screen",
     "Contributor",
     "Draft/Edit",
