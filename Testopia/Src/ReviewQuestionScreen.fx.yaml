@@ -179,9 +179,13 @@ ReviewQuestionScreen As screen:
         ZIndex: =20
 
     Image21 As image:
-        Image: =User.
-        X: =1516
-        Y: =100
+        Image: =User().Image
+        RadiusBottomLeft: =50
+        RadiusBottomRight: =50
+        RadiusTopLeft: =50
+        RadiusTopRight: =50
+        X: =1598
+        Y: =20
         ZIndex: =21
 
     Button2 As button:
