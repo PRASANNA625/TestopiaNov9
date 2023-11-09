@@ -468,11 +468,11 @@ Screen2_1 As screen:
                             )
                         );
                         Set(VarB, CountRows(Filter('Exm.Options', options_id in VarOpt.options_id)) > 0);
-                        //Set(Radio3DefaultValue, LookUp('Exm.Options', options_id in VarOpt.options_id).options);//
-                        Set(
+                        Set(Radio3DefaultValue, LookUp('Exm.Options', options_id in VarOpt.options_id).options);
+                        /*Set(
                             Radio3DefaultValue,
                             LookUp('Exm.Options', options = First(Filter('Exm.Options', options_id in VarOpt.options_id)).options)
-                        );
+                        );*/
                         
                         
                         
