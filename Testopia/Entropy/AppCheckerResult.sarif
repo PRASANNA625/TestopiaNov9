@@ -4126,17 +4126,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.V_PersonIconHide"
+                  "fullyQualifiedName": "App.V_PhoneIconHide"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.V_PersonIconHide",
+                  "fullyQualifiedName": "App.V_PhoneIconHide",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "V_PersonIconHide",
+                "member": "V_PhoneIconHide",
                 "module": "App",
                 "type": "App"
               }
@@ -4186,17 +4186,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.V_PhoneIconHide"
+                  "fullyQualifiedName": "App.V_PersonIconHide"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.V_PhoneIconHide",
+                  "fullyQualifiedName": "App.V_PersonIconHide",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "V_PhoneIconHide",
+                "member": "V_PersonIconHide",
                 "module": "App",
                 "type": "App"
               }
@@ -4377,6 +4377,36 @@
               },
               "properties": {
                 "member": "Group 383",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 15
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.Power app design artborad"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.Power app design artborad",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Power app design artborad",
                 "module": "App",
                 "type": "App"
               }
