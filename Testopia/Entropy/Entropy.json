@@ -274,7 +274,7 @@
     "TutorialNavigator1": 50,
     "TutorialText1": 46,
     "TutorialText1_1": 45,
-    "Value1": 171,
+    "Value1": 277,
     "YesButton_QuestionScreen": 247,
     "YourQuestionLbl_1": 133,
     "YourQuestionTxt_1": 134
@@ -282,7 +282,7 @@
   "DoesTestStepsMetadataExist": true,
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "11/09/2023 05:02:29",
+  "HeaderLastSavedDateTimeUTC": "11/09/2023 07:29:02",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "0492e0fc-83f0-4bdc-9842-c9f7647ca527": "\"/providers/microsoft.powerapps/apis/shared_teams/connections/shared-teams-e1c95543-4261-43cf-961e-8c2fc90d9205\"",
@@ -1095,7 +1095,7 @@
     "TutorialNavigator1": 7,
     "TutorialText1": 3,
     "TutorialText1_1": 2,
-    "Value1": 179,
+    "Value1": 0,
     "YesButton_QuestionScreen": 95,
     "YourQuestionLbl_1": 141,
     "YourQuestionTxt_1": 142

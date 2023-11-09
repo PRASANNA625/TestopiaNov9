@@ -575,7 +575,7 @@
             DropdownCanvas2 As Dropdown.pcfdataset:
                 DisplayMode: =DisplayMode.Edit
                 Height: =45
-                Items: =["SQL","Power Apps","Power BI","Java","Data Bricks"]
+                Items: =Distinct('Exm.Technology', technology)
                 Required: =false
                 Width: =335
                 X: =40
@@ -588,7 +588,7 @@
                     FieldType: ="s"
                     FieldVariantName: ="textualColumn"
                     Order: =1
-                    ZIndex: =13
+                    ZIndex: =14
 
             Label5_4 As label:
                 Color: =RGBA(51, 51, 51, 1)
