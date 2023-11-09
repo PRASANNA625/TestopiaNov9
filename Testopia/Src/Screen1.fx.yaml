@@ -24,6 +24,8 @@ Screen1 As screen:
     Button3 As button:
         Font: =Font.Arial
         Height: =53
+        OnSelect: |
+            =Navigate(Screen2_1, ScreenTransition.Cover, { Gal2: true })
         RadiusBottomLeft: =0
         RadiusBottomRight: =0
         RadiusTopLeft: =0
