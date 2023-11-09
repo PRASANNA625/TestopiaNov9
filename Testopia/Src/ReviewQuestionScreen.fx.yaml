@@ -184,7 +184,7 @@ ReviewQuestionScreen As screen:
         RadiusBottomRight: =50
         RadiusTopLeft: =50
         RadiusTopRight: =50
-        X: =1598
+        X: =1570
         Y: =20
         ZIndex: =21
 
@@ -218,4 +218,21 @@ ReviewQuestionScreen As screen:
         X: =810
         Y: =1013
         ZIndex: =22
+
+    Label1 As label:
+        Font: =Font.Arial
+        FontWeight: =FontWeight.Semibold
+        Height: =50
+        Size: =18
+        Text: =User().FullName
+        Width: =250
+        X: =1670
+        Y: =20
+        ZIndex: =23
+
+    Image22 As image:
+        Image: =contributor
+        X: =1686
+        Y: =34
+        ZIndex: =24
 
