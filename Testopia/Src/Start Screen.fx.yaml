@@ -23,7 +23,7 @@
             BorderColor: =RGBA(237, 237, 237, 1)
             BorderThickness: =2
             Fill: |-
-                =If(Or(ThisItem.Step = 1 && IsBlank(_guideStep), ThisItem.Step = _guideStep), NextBtn.Fill, RGBA(0,0,0,0))
+                =If(Or(ThisItem.Step = 1 && IsBlank(_guideStep), ThisItem.Step = _guideStep), RGBA(129, 167, 255, 1), RGBA(0,0,0,0))
                 //Switch(_guideStep,0,NextBtn.Color,1,NextBtn.Color,2,NextBtn.Color)
             FocusedBorderThickness: =4
             Height: =Circle2.Width
@@ -36,7 +36,7 @@
 
     TutorialImage1 As image:
         AccessibleLabel: ="Layouts_Tutorial_Image_Accessible_Text"
-        Height: =479
+        Height: =343
         Image: =If(IsBlank(_guideStep), First(TutorialNavigator1.AllItems).Image, LookUp(TutorialNavigator1.AllItems, Step = _guideStep).Image)
         Width: =916
         X: =502
@@ -55,7 +55,7 @@
         Text: =If(IsBlank(_guideStep), First(TutorialNavigator1.AllItems).Text, LookUp(TutorialNavigator1.AllItems, Step = _guideStep).Text)
         Width: =716
         X: =602
-        Y: =784
+        Y: =624
         ZIndex: =4
 
     LabelSkip1 As label:
@@ -79,6 +79,7 @@
         ZIndex: =7
 
     NextBtn As button:
+        DisplayMode: =If(_guideStep = 2 ,DisplayMode.Disabled,DisplayMode.Edit)
         OnSelect: |-
             =Set(_guideStep, Min(_guideStep+1, Last(TutorialNavigator1.AllItems).Step));
             //If(_guideStep <2  ,Navigate('Welcome Page'))
@@ -107,10 +108,10 @@
         PaddingLeft: =20
         PaddingRight: =20
         Size: =25
-        Text: =Switch(_guideStep,0,"Text Taker",1,"Reviewer",2,"Contributor")
+        Text: =Switch(_guideStep,0,"Test Taker",1,"Reviewer",2,"Contributor")
         Width: =621
-        X: =650
-        Y: =719
+        X: =649
+        Y: =565
         ZIndex: =10
 
     Image2 As image:
