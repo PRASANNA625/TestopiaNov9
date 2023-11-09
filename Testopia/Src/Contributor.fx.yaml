@@ -613,6 +613,7 @@
 
             Button1 As button:
                 Font: =Font.Arial
+                OnSelect: =Navigate('Draft/Edit')
                 Size: =13
                 Text: ="Submit"
                 Width: =128

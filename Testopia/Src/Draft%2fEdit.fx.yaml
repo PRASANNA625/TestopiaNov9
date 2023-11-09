@@ -562,3 +562,11 @@
         Y: =113
         ZIndex: =9
 
+    Arrow1_3 As arrow.backArrow:
+        Height: =35
+        OnSelect: =Back()
+        Width: =35
+        X: =10
+        Y: =10
+        ZIndex: =10
+
