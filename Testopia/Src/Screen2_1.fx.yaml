@@ -526,11 +526,11 @@ Screen2_1 As screen:
             Y: =43
             ZIndex: =2
 
-    Arrow1_2 As arrow.backArrow:
-        Height: =35
-        OnSelect: =Back()
-        Width: =35
-        X: =10
-        Y: =10
+    Image25 As image:
+        Height: =155
+        Image: ='Group 382'
+        Width: =197
+        X: =510
+        Y: =452
         ZIndex: =4
 
