@@ -88,9 +88,9 @@ Screen2_1 As screen:
                 Set(Cont5,false);
                 
                 
-            Size: =20
+            Size: =18
             Text: ="All Questions (8)"
-            Width: =235
+            Width: =220
             ZIndex: =1
 
         Label11_4 As label:
@@ -108,7 +108,7 @@ Screen2_1 As screen:
                 Set(Gal2,true);
                 Set(Cont4,true);
                 Set(Cont5,false);
-            Size: =20
+            Size: =18
             Text: ="Review"
             Width: =220
             X: =220
@@ -130,9 +130,9 @@ Screen2_1 As screen:
                 Set(Cont5,true);
                 Set(Gal3,true);
                 
-            Size: =20
+            Size: =18
             Text: ="Approved/Rejected"
-            Width: =253
+            Width: =259
             X: =440
             ZIndex: =3
 
