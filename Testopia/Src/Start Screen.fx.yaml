@@ -65,39 +65,7 @@
         Font: =Font.Arial
         FontWeight: =FontWeight.Semibold
         Height: =55
-        OnSelect: |
-            =//Set(_guideStep, Last(TutorialNavigator1.AllItems).Step);
-            //Navigate('Welcome Page');
-            NewForm(CandidateDetailsFormCandidateDetailsScreen);
-            Set(
-                NextButtonHideCandidateDetailsScreen,
-                true
-            );
-            Set(
-                CandidateDetailsFormHideCandidateDetailsScreen,
-                true
-            );
-            Set(
-                V_PersonIconHide,
-                true
-            );
-            Set(
-                V_MailIconHide,
-                true
-            );
-            Set(
-                V_PhoneIconHide,
-                true
-            );
-            Set(
-                CandidateDetailSubmitConfirmationPopupMenuHide,
-                false
-            );
-            Set(
-                V_EnterOTPcontainerHide,
-                false
-            );
-            Navigate('Candidate Details Screen');
+        OnSelect: =Navigate(Role)
         Size: =13
         TabIndex: =0
         Text: ="Lets go"
