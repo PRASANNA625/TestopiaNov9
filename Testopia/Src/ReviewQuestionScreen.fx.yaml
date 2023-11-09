@@ -191,6 +191,7 @@ ReviewQuestionScreen As screen:
     Button2 As button:
         Font: =Font.Arial
         Height: =55
+        OnSelect: =Navigate(Screen1)
         RadiusBottomLeft: =0
         RadiusBottomRight: =0
         RadiusTopLeft: =0
@@ -208,6 +209,7 @@ ReviewQuestionScreen As screen:
         Fill: =RGBA(247, 247, 247, 1)
         Font: =Font.Arial
         Height: =55
+        OnSelect: =Navigate(Screen2)
         RadiusBottomLeft: =0
         RadiusBottomRight: =0
         RadiusTopLeft: =0

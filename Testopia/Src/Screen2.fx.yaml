@@ -19,10 +19,25 @@ Screen2 As screen:
 
     TextInput5 As text:
         Default: =""
+        Fill: =RGBA(247, 247, 247, 1)
         Height: =133
         HintText: ="                               Type Here........"
         Width: =590
-        X: =652
+        X: =628
         Y: =413
         ZIndex: =3
+
+    Button4 As button:
+        Font: =Font.Arial
+        Height: =53
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Size: =17
+        Text: ="Done"
+        Width: =199
+        X: =856
+        Y: =622
+        ZIndex: =4
 
