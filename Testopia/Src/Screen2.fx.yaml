@@ -1,0 +1,28 @@
+Screen2 As screen:
+    Fill: =RGBA(247,247,247,1)
+
+    Image23 As image:
+        Height: =47
+        Image: ='Thank you'
+        Width: =206
+        X: =790
+        Y: =254
+        ZIndex: =1
+
+    Image24 As image:
+        Height: =28
+        Image: ='Kindly Provide the reason why you have rejected'
+        Width: =542
+        X: =652
+        Y: =340
+        ZIndex: =2
+
+    TextInput5 As text:
+        Default: =""
+        Height: =133
+        HintText: ="                               Type Here........"
+        Width: =590
+        X: =652
+        Y: =413
+        ZIndex: =3
+
