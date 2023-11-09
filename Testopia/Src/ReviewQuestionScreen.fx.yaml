@@ -70,8 +70,8 @@ ReviewQuestionScreen As screen:
             =//Set(Radio3DefaultValue, LookUp('Exm.Options', options = Radio3.Selected.options).options)//
             //Set(Radio3DefaultValue, LookUp('Exm.Options', options_id in VarOpt.options_id).options)//
         Width: =410
-        X: =114
-        Y: =573
+        X: =96
+        Y: =500
         ZIndex: =7
 
     Image9 As image:
