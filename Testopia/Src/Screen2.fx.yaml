@@ -5,16 +5,16 @@ Screen2 As screen:
         Height: =47
         Image: ='Thank you'
         Width: =206
-        X: =790
-        Y: =254
+        X: =701
+        Y: =256
         ZIndex: =1
 
     Image24 As image:
         Height: =28
         Image: ='Kindly Provide the reason why you have rejected'
         Width: =542
-        X: =652
-        Y: =340
+        X: =533
+        Y: =350
         ZIndex: =2
 
     TextInput5 As text:
@@ -23,13 +23,15 @@ Screen2 As screen:
         Height: =133
         HintText: ="                               Type Here........"
         Width: =590
-        X: =628
-        Y: =413
+        X: =533
+        Y: =428
         ZIndex: =3
 
     Button4 As button:
         Font: =Font.Arial
         Height: =53
+        OnSelect: |
+            =Navigate(Screen2_1, ScreenTransition.Cover, { Gal2: true })
         RadiusBottomLeft: =5
         RadiusBottomRight: =5
         RadiusTopLeft: =5
@@ -37,7 +39,7 @@ Screen2 As screen:
         Size: =17
         Text: ="Done"
         Width: =199
-        X: =856
-        Y: =622
+        X: =728
+        Y: =624
         ZIndex: =4
 
