@@ -534,3 +534,11 @@ Screen2_1 As screen:
         Y: =452
         ZIndex: =4
 
+    Image26 As image:
+        Height: =120
+        Image: ='Group 383'
+        Width: =150
+        X: =968
+        Y: =468
+        ZIndex: =5
+
